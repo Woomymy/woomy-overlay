@@ -11,4 +11,5 @@ eselect repository add woomy-overlay git https://github.com/woomy4680-exe/adrien
 After just sync your repositories and all is good! 
 
 > NOTE: if you use calculate Linux you can set updates from other overlays by typing 
-```cl-core-variables --set update.cl_update_other_set=on```
+
+> ```cl-core-variables --set update.cl_update_other_set=on```
