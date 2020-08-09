@@ -6,7 +6,7 @@ To install this overlay, you can use the `app-eselect/eselect-repository` tool.
 **Make sure dev-vcs/git and app-eselect/eselect-repository tools are installed!**
 
 To install the repository you just need to type ```
-eselect repository add woomy-overlay git https://github.com/woomy4680-exe/adrien-overlay.git```
+eselect repository add woomy-overlay git https://github.com/woomy4680-exe/woomy-overlay.git```
 
 After just sync your repositories and all is good! 
 
