@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Microsoft Excel
+Comment=Lancer Microsoft Excel
+Icon=ms-excel
+Exec=xdg-open https://office.com/launch/excel
+NoDispllay=false
+Categories=Office;
+StartupNotify=true
+Terminal=false
