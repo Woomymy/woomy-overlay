@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Microsoft Word
+Comment=Lancer Microsoft Word
+Icon=ms-word
+Exec=xdg-open https://office.com/launch/word
+NoDisplay=false
+Categories=Office;
+StartupNotify=true
+Terminal=false
