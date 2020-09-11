@@ -27,6 +27,7 @@ SNAP_NAME="H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_5"
 src_prepare() {
 	default
 	unsquashfs -d "${S}/authy" "${DISTDIR}/${SNAP_NAME}.snap"
+	rm -rf ${S}/authy/{data-dir,gnome-platform,meta,scripts,usr,*.sh}
 }
 src_compile() {
 	return
