@@ -1,9 +1,9 @@
 [Desktop Entry]
 Version=2.17.17417
 Type=Application
-Name=MineCraft
+Name=Minecraft
 Icon=minecraft-launcher
-Description=Official MineCraft launcher
+Description=Official Minecraft launcher
 Exec=/usr/bin/minecraft-launcher
 NoDisplay=false
 StartupNotify=false

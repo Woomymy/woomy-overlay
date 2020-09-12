@@ -3,7 +3,7 @@
 
 EAPI=7
 
-DESCRIPTION="Official MineCraft launcher"
+DESCRIPTION="Official Minecraft launcher"
 HOMEPAGE="https://minecraft.net"
 SRC_URI="https://launcher.mojang.com/download/Minecraft.tar.gz"
 
