@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-V="22"
+V="24"
 DESCRIPTION="A new type of Shell"
 HOMEPAGE="https://nushell.sh"
 SRC_URI="https://github.com/nushell/nushell/releases/download/${PV}/nu_0_${V}_1_linux.tar.gz"
