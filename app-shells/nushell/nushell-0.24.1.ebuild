@@ -321,6 +321,7 @@ num-traits-0.2.14
 num_cpus-1.13.0
 object-0.22.0
 once_cell-1.5.2
+objc-0.2.7
 onig-6.1.1
 onig_sys-69.6.0
 opaque-debug-0.2.3
