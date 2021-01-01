@@ -582,6 +582,7 @@ wild-2.0.4
 error-code-2.0.2
 str-buf-1.0.5
 clipboard-win-2.2.0
+xcb-0.9.0
 winapi-0.2.8
 winapi-0.3.9
 winapi-build-0.1.1
