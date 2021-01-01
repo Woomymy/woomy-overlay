@@ -582,7 +582,7 @@ wild-2.0.4
 error-code-2.0.2
 str-buf-1.0.5
 clipboard-win-2.2.0
-malloc_buf-1.0.0
+malloc_buf-0.0.6
 xcb-0.8.2
 winapi-0.2.8
 winapi-0.3.9
