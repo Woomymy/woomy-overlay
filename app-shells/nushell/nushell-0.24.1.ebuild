@@ -592,7 +592,7 @@ inherit cargo
 
 DESCRIPTION="A new type of shell"
 HOMEPAGE="https://github.com/nushell/nushell"
-SRC_URI="$(cargo_crate_uris ${CRATES})"
+SRC_URI="https://github.com/nushell/nushell/archive/0.24.1.tar.gz $(cargo_crate_uris ${CRATES})"
 RESTRICT="mirror"
 LICENSE="MIT"
 SLOT="0"
