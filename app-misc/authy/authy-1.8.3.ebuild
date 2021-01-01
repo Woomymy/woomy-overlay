@@ -20,7 +20,7 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
-	sys-fs/squashfs-tools[xz]
+	sys-fs/squashfs-tools
 "
 S="${WORKDIR}"
 SNAP_NAME="H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_5"
