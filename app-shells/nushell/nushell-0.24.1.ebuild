@@ -573,6 +573,7 @@ wasm-bindgen-macro-0.2.68
 wasm-bindgen-macro-support-0.2.68
 wasm-bindgen-shared-0.2.68
 wasm-bindgen-test-0.3.18
+block-0.1.6
 wasm-bindgen-test-macro-0.3.18
 web-sys-0.3.45
 wepoll-sys-stjepang-1.0.8
