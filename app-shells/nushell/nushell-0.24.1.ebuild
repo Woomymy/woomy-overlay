@@ -75,6 +75,7 @@ cfg-if-1.0.0
 chrono-0.4.19
 chrono-tz-0.5.3
 clap-2.33.3
+clipboard-0.5.0
 cloudabi-0.0.3
 cloudabi-0.1.0
 codepage-0.1.1
