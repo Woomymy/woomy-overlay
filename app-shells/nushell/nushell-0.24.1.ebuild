@@ -81,6 +81,7 @@ cloudabi-0.1.0
 codepage-0.1.1
 codespan-reporting-0.9.5
 colored-1.9.3
+trash-1.2.0
 concurrent-queue-1.2.2
 config-0.10.1
 console-0.11.3
