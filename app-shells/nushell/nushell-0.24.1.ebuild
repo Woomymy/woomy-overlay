@@ -599,5 +599,10 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND=""
-RDEPEND=""
+DEPEND="
+	x11-libs/libXcomposite
+	x11-libs/libxcb
+	x11-libs/libX11
+	"
+RDEPEND="${DEPEND}"
+BDEPEND="${DEPEND}"
