@@ -2,10 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-
+V="25"
 DESCRIPTION="A new type of Shell"
 HOMEPAGE="https://nushell.sh"
-SRC_URI="https://github.com/nushell/nushell/releases/download/0.19.0/nu_0_19_0_linux.tar.gz"
+SRC_URI="https://github.com/nushell/nushell/releases/download/${PV}/nu_0_${V}_1_linux.tar.gz"
 
 LICENSE=""
 SLOT="0"
@@ -20,7 +20,7 @@ DEPEND="
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
-S="${WORKDIR}/nu_0_19_0_linux/nushell-${PV}"
+S="${WORKDIR}/nu_0_${V}_1_linux/nushell-${PV}"
 
 src_install() {
 	dodir /opt/nushell
