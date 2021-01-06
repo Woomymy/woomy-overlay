@@ -15,6 +15,7 @@ IUSE=""
 DEPEND="
 	x11-libs/libxcb
 	x11-libs/libX11
+	!app-shells/nushell
 "
 RDEPEND="${DEPEND}"
 BDEPEND=""
