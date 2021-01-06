@@ -600,7 +600,7 @@ arboard-1.1.0
 core-graphics-0.22.2
 bytemuck-1.4.1
 color_quant-1.1.0
-image-0.23.12
+image-0.22.5
 "
 
 inherit cargo
