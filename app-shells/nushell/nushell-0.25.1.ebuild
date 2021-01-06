@@ -597,6 +597,10 @@ str-buf-1.0.5
 xcb-0.8.2
 malloc_buf-0.0.6
 block-0.1.6
+arboard-1.1.0
+core-graphics-0.22.2
+bytemuck-1.4.1
+color_quant-1.1.0
 "
 
 inherit cargo
