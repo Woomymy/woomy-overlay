@@ -233,7 +233,6 @@ hyper-tls-0.4.3
 ical-0.6.0
 ichwh-0.3.4
 idna-0.2.0
-image-0.22.5
 indexmap-1.6.0
 inflate-0.4.5
 instant-0.1.9
@@ -601,6 +600,7 @@ arboard-1.1.0
 core-graphics-0.22.2
 bytemuck-1.4.1
 color_quant-1.1.0
+image-0.23.12
 "
 
 inherit cargo
