@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.8.3
+Type=Application
+Name=Authy
+Icon=authy
+Description=2FA application
+Exec=/usr/bin/authy
+NoDisplay=false
+Categories=X-GNOME-Other;
+StartupNotify=false
+Terminal=false
