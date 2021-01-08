@@ -608,7 +608,7 @@ SRC_URI="https://github.com/nushell/nushell/archive/0.24.1.tar.gz $(cargo_crate_
 RESTRICT="mirror"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 IUSE=""
 
 DEPEND="
