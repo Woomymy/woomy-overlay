@@ -614,7 +614,7 @@ SRC_URI="https://github.com/nushell/nushell/archive/${PV}.tar.gz $(cargo_crate_u
 RESTRICT="mirror"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 IUSE=""
 
 DEPEND="
