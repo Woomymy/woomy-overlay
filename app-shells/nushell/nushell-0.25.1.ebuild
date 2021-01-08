@@ -17,6 +17,7 @@ ansi_colours-1.0.1
 ansi_term-0.11.0
 ansi_term-0.12.1
 anymap-0.12.1
+arboard-1.1.0
 arrayref-0.3.6
 arrayvec-0.4.12
 arrayvec-0.5.2
@@ -38,10 +39,10 @@ atomic-waker-1.0.0
 atty-0.2.14
 autocfg-1.0.1
 backtrace-0.3.55
-base64-0.12.3
-base64-0.13.0
 base64-0.6.0
 base64-0.9.3
+base64-0.12.3
+base64-0.13.0
 bat-0.15.4
 battery-0.7.8
 bigdecimal-0.2.0
@@ -50,6 +51,7 @@ bit-set-0.5.2
 bit-vec-0.6.2
 bitflags-1.2.1
 blake2b_simd-0.5.11
+block-0.1.6
 block-buffer-0.2.0
 block-buffer-0.7.3
 block-buffer-0.9.0
@@ -61,6 +63,7 @@ bumpalo-3.4.0
 byte-tools-0.2.0
 byte-tools-0.3.1
 byte-unit-4.0.9
+bytemuck-1.4.1
 byteorder-1.3.4
 bytes-0.4.12
 bytes-0.5.6
@@ -75,10 +78,12 @@ cfg-if-1.0.0
 chrono-0.4.19
 chrono-tz-0.5.3
 clap-2.33.3
+clipboard-win-4.0.3
 cloudabi-0.0.3
 cloudabi-0.1.0
 codepage-0.1.1
 codespan-reporting-0.9.5
+color_quant-1.1.0
 colored-1.9.3
 concurrent-queue-1.2.2
 config-0.10.1
@@ -91,6 +96,7 @@ core-foundation-0.7.0
 core-foundation-0.9.1
 core-foundation-sys-0.7.0
 core-foundation-sys-0.8.2
+core-graphics-0.21.0
 cpuid-bool-0.1.2
 crc32fast-1.2.1
 crossbeam-channel-0.3.9
@@ -118,6 +124,7 @@ darwin-libproc-0.2.0
 darwin-libproc-sys-0.2.0
 decimal-2.0.4
 deflate-0.7.20
+deflate-0.8.6
 derive-new-0.5.8
 derive_more-0.99.11
 digest-0.6.2
@@ -148,6 +155,7 @@ encoding_index_tests-0.1.4
 encoding_rs-0.8.26
 env_logger-0.7.1
 error-chain-0.12.4
+error-code-2.0.2
 event-listener-2.5.1
 failure-0.1.8
 failure_derive-0.1.8
@@ -191,9 +199,9 @@ futures-util-preview-0.3.0-alpha.19
 futures_codec-0.4.1
 fxhash-0.2.1
 gcc-0.3.55
+generic-array-0.8.3
 generic-array-0.12.3
 generic-array-0.14.4
-generic-array-0.8.3
 getrandom-0.1.15
 getset-0.1.1
 gimli-0.23.0
@@ -233,6 +241,8 @@ hyper-tls-0.4.3
 ical-0.6.0
 ichwh-0.3.4
 idna-0.2.0
+image-0.22.5
+image-0.23.12
 indexmap-1.6.0
 inflate-0.4.5
 instant-0.1.9
@@ -271,6 +281,7 @@ log-0.4.11
 mac-0.1.1
 macaddr-1.0.1
 mach-0.3.2
+malloc_buf-0.0.6
 maplit-1.0.2
 markup5ever-0.10.0
 matches-0.1.8
@@ -314,6 +325,9 @@ num-rational-0.3.2
 num-traits-0.1.43
 num-traits-0.2.14
 num_cpus-1.13.0
+objc-0.2.7
+objc-foundation-0.1.1
+objc_id-0.1.1
 object-0.22.0
 once_cell-1.5.2
 onig-6.1.1
@@ -327,9 +341,9 @@ openssl-sys-0.9.58
 ordered-float-1.0.2
 ordered-float-2.0.1
 parking-2.0.0
+parking_lot-0.9.0
 parking_lot-0.10.2
 parking_lot-0.11.1
-parking_lot-0.9.0
 parking_lot_core-0.6.2
 parking_lot_core-0.7.2
 parking_lot_core-0.8.0
@@ -359,6 +373,7 @@ pkg-config-0.3.19
 platforms-1.0.3
 plist-1.0.0
 png-0.15.3
+png-0.16.8
 polling-1.1.0
 ppv-lite86-0.2.10
 precomputed-hash-0.1.1
@@ -431,8 +446,8 @@ scopeguard-1.1.0
 security-framework-2.0.0
 security-framework-sys-2.0.0
 selectors-0.22.0
-semver-0.10.0
 semver-0.9.0
+semver-0.10.0
 semver-parser-0.7.0
 serde-0.8.23
 serde-1.0.117
@@ -468,6 +483,7 @@ socket2-0.3.17
 stable_deref_trait-1.2.0
 static_assertions-1.1.0
 std_prelude-0.2.12
+str-buf-1.0.5
 string_cache-0.8.1
 string_cache_codegen-0.5.1
 strip-ansi-escapes-0.1.0
@@ -492,6 +508,7 @@ thiserror-1.0.22
 thiserror-impl-1.0.22
 thread_local-0.3.6
 thread_local-1.0.1
+tiff-0.6.1
 time-0.1.44
 tint-1.0.1
 tinyvec-1.1.0
@@ -521,6 +538,7 @@ tower-service-0.3.0
 tracing-0.1.22
 tracing-core-0.1.17
 tracing-futures-0.2.4
+trash-1.2.0
 try-lock-0.1.0
 try-lock-0.2.3
 tui-0.12.0
@@ -555,8 +573,8 @@ waker-fn-1.1.0
 walkdir-2.3.1
 want-0.0.4
 want-0.3.0
-wasi-0.10.0+wasi-snapshot-preview1
 wasi-0.9.0+wasi-snapshot-preview1
+wasi-0.10.0+wasi-snapshot-preview1
 wasm-bindgen-0.2.68
 wasm-bindgen-backend-0.2.68
 wasm-bindgen-futures-0.3.27
@@ -567,6 +585,7 @@ wasm-bindgen-shared-0.2.68
 wasm-bindgen-test-0.3.18
 wasm-bindgen-test-macro-0.3.18
 web-sys-0.3.45
+weezl-0.1.3
 wepoll-sys-stjepang-1.0.8
 which-4.0.2
 widestring-0.4.3
@@ -580,27 +599,11 @@ winapi-x86_64-pc-windows-gnu-0.4.0
 winreg-0.7.0
 ws2_32-sys-0.2.1
 x11-2.18.2
+xcb-0.9.0
 xml-rs-0.8.3
 xmlparser-0.13.3
 yaml-rust-0.4.4
 zip-0.5.8
-clipboard-0.5.0
-x11-clipboard-0.3.3
-trash-1.2.0
-objc-foundation-0.1.1
-objc_id-0.1.1
-objc-0.2.7
-clipboard-win-2.2.0
-error-code-2.0.2
-str-buf-1.0.5
-xcb-0.8.2
-malloc_buf-0.0.6
-block-0.1.6
-arboard-1.1.0
-core-graphics-0.22.2
-bytemuck-1.4.1
-color_quant-1.1.0
-image-0.22.5
 "
 
 inherit cargo
