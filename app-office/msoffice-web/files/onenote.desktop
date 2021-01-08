@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Microsoft OneNote
-Comment=Lancer Microsoft OneNote
+Comment=Launch Microsoft OneNote
 Icon=ms-onenote
 Exec=xdg-open https://onenote.com
 NoDisplay=false

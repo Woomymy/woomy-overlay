@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Microsoft Powerpoint
-Comment=Lancer Microsoft Powerpoint
+Comment=Launch Microsoft Powerpoint
 Icon=ms-powerpoint
 Exec=xdg-open https://office.com/launch/powerpoint
 NoDisplay=false
