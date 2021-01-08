@@ -29,7 +29,7 @@ fi
 if use powerpoint; then
 	doins ${FILESDIR}/powerpoint.desktop
 fi
-if use onenote; then 
+if use onenote; then
 	doins ${FILESDIR}/onenote.desktop
 fi
 }
