@@ -26,7 +26,7 @@ S="${WORKDIR}"
 SNAP_NAME="H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_5"
 src_prepare() {
 	default
-	rdsquashfs -u / -p authy H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_5.snap
+	rdsquashfs -u / -p "${S}/authy" "${DISTDIR}/H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_5.snap"
 	rm -rf ${S}/authy/{data-dir,gnome-platform,meta,scripts,usr,*.sh}
 }
 src_compile() {
