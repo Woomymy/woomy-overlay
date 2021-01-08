@@ -21,7 +21,7 @@ DEPEND="
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
-S="${WORKDIR}/nu_0_${MY_V}_linux/nushell-${PV}"
+S="${WORKDIR}/nu_${MY_V}_linux/nushell-${PV}"
 
 src_install() {
 	# Add documentation files
