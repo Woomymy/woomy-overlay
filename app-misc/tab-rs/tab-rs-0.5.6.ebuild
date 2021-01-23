@@ -238,3 +238,7 @@ IUSE=""
 
 DEPEND=""
 RDEPEND=""
+
+src_install() {
+	dobin "${S}/target/release/tab"
+}
