@@ -17,6 +17,6 @@ RDEPEND="${DEPEND}"
 BDEPEND=""
 
 src_install(){
-	dobin "${S}/wng-gnu-linux-x86_64"
+	dobin "${DISTDIR}/wng-gnu-linux-x86_64"
 	dosym "/usr/bin/wng-gnu-linux-x86_64" "/usr/bin/wng"
 }
