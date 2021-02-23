@@ -4,6 +4,7 @@
 EAPI=7
 
 CRATES="
+
 Inflector-0.11.4
 addr2line-0.14.1
 adler-0.2.3
@@ -433,6 +434,8 @@ serde_test-0.8.23
 serde_urlencoded-0.6.1
 serde_urlencoded-0.7.0
 serde_yaml-0.8.16
+serial_test-0.5.1
+serial_test_derive-0.5.1
 servo_arc-0.1.1
 sha1-0.2.0
 sha2-0.6.0
