@@ -57,6 +57,7 @@ wasi-0.9.0+wasi-snapshot-preview1
 winapi-0.3.9
 winapi-i686-pc-windows-gnu-0.4.0
 winapi-x86_64-pc-windows-gnu-0.4.0
+wng-lib-0.1.3
 "
 
 inherit cargo
