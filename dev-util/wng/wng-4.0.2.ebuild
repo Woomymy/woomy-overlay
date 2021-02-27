@@ -75,5 +75,5 @@ DEPEND=""
 RDEPEND=""
 
 src_install() {
-	doexe "${WORKDIR}/target/release/wng"
+	doexe "${WORKDIR}/${P}/target/release/wng"
 }
