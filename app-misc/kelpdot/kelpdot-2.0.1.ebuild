@@ -54,6 +54,6 @@ LICENSE="GPL-3.0"
 SLOT="0"
 KEYWORDS="amd64"
 IUSE=""
-
+S="${WORKDIR}/kelp-${PV}.tar.gz"
 DEPEND=""
 RDEPEND=""
