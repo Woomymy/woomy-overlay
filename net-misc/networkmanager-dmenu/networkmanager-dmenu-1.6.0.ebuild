@@ -16,7 +16,7 @@ DEPEND="
 	dmenu? ( x11-misc/dmenu )
 	rofi? ( x11-misc/rofi )
 	dev-python/pygobject
-	dev-lang/python
+	dev-lang/python:3.8
 "
 RDEPEND="${DEPEND}"
 BDEPEND=""

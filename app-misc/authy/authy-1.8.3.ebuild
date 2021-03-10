@@ -16,7 +16,7 @@ DEPEND="
 	dev-libs/libdbusmenu
 	dev-libs/libappindicator
 	dev-libs/nss
-	x11-libs/gtk+
+	x11-libs/gtk+:3
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
