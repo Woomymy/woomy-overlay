@@ -7,7 +7,7 @@ DESCRIPTION="2FA software"
 HOMEPAGE="https://authy.com/"
 SRC_URI="https://api.snapcraft.io/api/v1/snaps/download/H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_5.snap"
 
-LICENSE=""
+LICENSE="all-rights-reserved"
 SLOT="0"
 KEYWORDS="amd64"
 IUSE=""

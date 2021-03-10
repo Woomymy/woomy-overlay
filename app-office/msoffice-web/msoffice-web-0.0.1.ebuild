@@ -7,7 +7,7 @@ DESCRIPTION="Web launchers for Microsoft Office"
 HOMEPAGE="https://office.com"
 SRC_URI=""
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE="+word +excel +powerpoint +onenote"
