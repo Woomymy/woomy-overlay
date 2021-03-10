@@ -649,7 +649,7 @@ KEYWORDS="amd64"
 IUSE=""
 
 DEPEND="
-    x11-libs/libXcomposite
+	x11-libs/libXcomposite
 	x11-libs/libxcb
 	x11-libs/libX11
 	!app-shells/nushell-bin
