@@ -12,7 +12,7 @@ SLOT="0"
 KEYWORDS="amd64"
 
 DEPEND="
-	virtual/jre
+	virtual/jre:1.8
 "
 RDEPEND="${DEPEND}"
 BDEPEND=""
