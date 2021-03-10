@@ -1,6 +1,8 @@
 <!--markdownlint-disable-file MD013-->
 # Woomy-overlay
 
+[![Overlay QA](https://github.com/Woomy4680-exe/woomy-overlay/actions/workflows/ci.yml/badge.svg)](https://github.com/Woomy4680-exe/woomy-overlay/actions/workflows/ci.yml)
+
 > A Gentoo overlay that provides some packages
 
 ## Install
