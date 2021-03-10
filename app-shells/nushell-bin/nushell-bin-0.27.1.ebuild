@@ -26,7 +26,6 @@ S="${WORKDIR}/nu_${MY_V}_linux/nushell-${PV}"
 src_install() {
 	# Add documentation files
 	dodoc README.txt
-	dodoc LICENSE
 	# Install nushell itself
 	dobin nu
 	# Install all plugins included in the zip

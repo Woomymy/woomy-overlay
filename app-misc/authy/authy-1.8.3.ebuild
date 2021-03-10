@@ -27,7 +27,7 @@ SNAP_NAME="H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_5"
 src_prepare() {
 	default
 	rdsquashfs -u / -p "${S}/authy" "${DISTDIR}/H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_5.snap"
-	rm -rf ${S}/authy/{data-dir,gnome-platform,meta,scripts,usr,*.sh}
+	rm -rf "${S}"/authy/{data-dir,gnome-platform,meta,scripts,usr,*.sh}
 }
 src_compile() {
 	return
@@ -35,23 +35,23 @@ src_compile() {
 src_install() {
 	dodir /opt/authy
 	exeinto /opt/authy
-	doexe ${S}/authy/*
+	doexe "${S}"/authy/*
 	dosym ../../opt/authy/authy /usr/bin/authy
 	insinto /opt/authy
 	dodir "/opt/authy/lib/x86_64-linux-gnu"
 	insinto "/opt/authy/lib/x86_64-linux-gnu/"
-	doins ${S}/authy/lib/x86_64-linux-gnu/*
+	doins "${S}"/authy/lib/x86_64-linux-gnu/*
 	dodir "/opt/authy/locales"
 	insinto "/opt/authy/locales"
-	doins ${S}/authy/locales/*
+	doins "${S}"/authy/locales/*
 
 	dodir "/opt/authy/resources"
 	insinto "/opt/authy/resources"
-	doins ${S}/authy/resources/*
+	doins "${S}"/authy/resources/*
 
 	dodir "/opt/authy/swiftshader"
 	insinto "/opt/authy/swiftshader"
-	doins ${S}/authy/swiftshader/*
+	doins "${S}"/authy/swiftshader/*
 
 	insinto /usr/share/applications
 	doins "${FILESDIR}/authy.desktop"
