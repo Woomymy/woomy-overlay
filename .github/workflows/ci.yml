@@ -1,0 +1,11 @@
+name: Overlay QA
+
+on:
+  push:
+
+jobs:
+  repoman:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: hacking-gentoo/action-repoman@master
