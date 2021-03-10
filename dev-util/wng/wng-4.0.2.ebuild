@@ -71,7 +71,9 @@ SLOT="0"
 KEYWORDS="amd64"
 IUSE=""
 
-DEPEND=""
+DEPEND="
+	!dev-util/wng-bin
+"
 RDEPEND=""
 
 src_install() {
