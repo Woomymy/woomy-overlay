@@ -12,7 +12,9 @@ SLOT="0"
 KEYWORDS="amd64"
 S="${WORKDIR}"
 
-DEPEND=""
+DEPEND="
+	!dev-util/wng
+"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
