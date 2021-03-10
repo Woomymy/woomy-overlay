@@ -36,7 +36,7 @@ src_install() {
 	dodir /opt/authy
 	exeinto /opt/authy
 	doexe ${S}/authy/*
-	dosym /opt/authy/authy /usr/bin/authy
+	dosym ../../opt/authy/authy /usr/bin/authy
 	insinto /opt/authy
 	dodir "/opt/authy/lib/x86_64-linux-gnu"
 	insinto "/opt/authy/lib/x86_64-linux-gnu/"
