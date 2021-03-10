@@ -33,5 +33,5 @@ src_install() {
 	doexe lib*
 	insinto /usr/share/applications
 	doins "${FILESDIR}/minecraft-launcher.desktop"
-	dosym "/opt/${PN}/minecraft-launcher" "/usr/bin/${PN}"
+	dosym "../../opt/${PN}/minecraft-launcher" "/usr/bin/${PN}"
 }
