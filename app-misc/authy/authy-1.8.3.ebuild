@@ -9,7 +9,7 @@ SRC_URI="https://api.snapcraft.io/api/v1/snaps/download/H8ZpNgIoPyvmkgxOWw5MSzsX
 
 LICENSE="all-rights-reserved"
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND="
