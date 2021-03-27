@@ -23,8 +23,6 @@ IUSE=""
 ruby_add_rdepend "
 	dev-ruby/kramdown
 	dev-ruby/kramdown-parser-gfm
-	dev-ruby/mixlib-cli
-	dev-ruby/mixlib-config
 	dev-ruby/mixlib-shellout
 "
 
