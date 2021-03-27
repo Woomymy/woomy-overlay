@@ -16,6 +16,7 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 DEPEND="dev-python/pyyaml
-        dev-python/pathspec"
+		dev-python/pathspec
+"
 RDEPEND="${DEPEND}"
 BDEPEND=""
