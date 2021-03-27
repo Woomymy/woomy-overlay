@@ -21,10 +21,10 @@ KEYWORDS="~amd64"
 IUSE=""
 
 ruby_add_rdepend "
-	dev-ruby/kramdown-2.3:2
-	dev-ruby/kramdown-parser-gfm-1.1:1
-	dev-ruby/mixlib-cli-2.1.1:0
-	dev-ruby/mixlib-config-2.2.1:0
+	dev-ruby/kramdown
+	dev-ruby/kramdown-parser-gfm
+	dev-ruby/mixlib-cli
+	dev-ruby/mixlib-config
 	dev-ruby/mixlib-shellout
 "
 
