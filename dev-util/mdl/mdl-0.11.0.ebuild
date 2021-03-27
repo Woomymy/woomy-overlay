@@ -1,0 +1,30 @@
+# Copyright 2021 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI=7
+USE_RUBY="ruby25 ruby26"
+
+RUBY_FAKEGEM_EXTRA_DOC="CHANGELOG.md README.md"
+
+RUBY_FAKEGEM_GEMSPEC="mdl.gemspec"
+
+inherit ruby-fakegem
+
+DESCRIPTION="Style checker/lint tool for markdown files"
+HOMEPAGE="https://github.com/markdownlint/markdownlint"
+SRC_URI="https://github.com/markdownlint/markdownlint/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+RUBY_S="markdownlint-${PV}"
+
+LICENSE="MIT"
+SLOT="0"
+KEYWORDS="~amd64"
+IUSE=""
+
+ruby_add_rdepend "
+	dev-ruby/kramdown-2.3:2
+	dev-ruby/kramdown-parser-gfm-1.1:1
+	dev-ruby/mixlib-cli-2.1.1:0
+	dev-ruby/mixlib-config-2.2.1:0
+	dev-ruby/mixlib-shellout
+"
+
