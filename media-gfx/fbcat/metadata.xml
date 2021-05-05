@@ -6,6 +6,6 @@
     <name>Woomy4680-exe</name>
   </maintainer>
   <longdescription>
-  	fbcat takes a screenshot using the Linux framebuffer device.
+    fbcat takes a screenshot using the Linux framebuffer device.
   </longdescription>
 </pkgmetadata>
