@@ -14,6 +14,7 @@ IUSE=""
 DEPEND="
 	media-libs/netpbm
 	sys-apps/kbd
+	!media-gfx/fbgrad
 "
 RDEPEND="${DEPEND}"
 BDEPEND=""
