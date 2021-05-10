@@ -3,7 +3,7 @@
 <pkgmetadata>
   <maintainer type="person">
     <email>github@woomy.ovh</email>
-    <name>Woomy4680-exe</name>
+    <name>Woomy</name>
   </maintainer>
   <longdescription>
     A linter for YAML files that does not only check for syntax validity, but for weirdnesses like key repetition and cosmetic problems such as lines length, trailing spaces, indentation, etc.
