@@ -3,7 +3,7 @@
 <pkgmetadata>
   <maintainer type="person">
     <email>github@woomy.ovh</email>
-    <name>Woomy4680-exe</name>
+    <name>Woomy</name>
   </maintainer>
   <longdescription>
     WNG is a C package and projects manager written in Rust.

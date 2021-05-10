@@ -1,0 +1,13 @@
+DEFINED_PHASES=install
+DEPEND=net-misc/networkmanager dmenu? ( x11-misc/dmenu ) rofi? ( x11-misc/rofi ) dev-python/pygobject dev-lang/python:3.8
+DESCRIPTION=Control networkmanager using DMENU
+EAPI=7
+HOMEPAGE=https://github.com/firecat53/networkmanager-dmenu
+IUSE=+dmenu rofi
+KEYWORDS=amd64 x86
+LICENSE=MIT
+RDEPEND=net-misc/networkmanager dmenu? ( x11-misc/dmenu ) rofi? ( x11-misc/rofi ) dev-python/pygobject dev-lang/python:3.8
+REQUIRED_USE=^^ ( dmenu rofi )
+SLOT=0
+SRC_URI=https://github.com/firecat53/networkmanager-dmenu/archive/v1.6.1.tar.gz
+_md5_=dea5124e70e1391adb9ec862f2be309a

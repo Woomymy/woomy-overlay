@@ -3,7 +3,7 @@
 <pkgmetadata>
   <maintainer type="person">
     <email>github@woomy.ovh</email>
-    <name>Woomy4680-exe</name>
+    <name>Woomy</name>
   </maintainer>
   <longdescription>
     Simple dotfiles manager written in rust
