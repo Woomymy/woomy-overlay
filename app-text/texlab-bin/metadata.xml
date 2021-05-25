@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>github@woomy.ovh</email>
+    <name>Woomy</name>
+  </maintainer>
+  <longdescription>
+    An implementation of the Langage server protocol for LaTeX
+  </longdescription>
+</pkgmetadata>
