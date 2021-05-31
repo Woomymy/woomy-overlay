@@ -28,5 +28,7 @@ src_configure() {
 
 src_install() {
 	dobin "${TRUE_PN}"
+	insinto /usr/share/applications
+	doins "${FILESDIR}/UefiTool.desktop"
 	einstalldocs
 }
