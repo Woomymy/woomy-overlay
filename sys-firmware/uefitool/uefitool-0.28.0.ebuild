@@ -11,7 +11,7 @@ inherit qmake-utils
 
 LICENSE="BSD-2"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 
 RDEPEND="
 	dev-qt/qtcore:5
@@ -27,6 +27,6 @@ src_configure() {
 }
 
 src_install() {
-	dobin UEFITool
+	dobin "${TRUE_PN}"
 	einstalldocs
 }
