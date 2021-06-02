@@ -35,23 +35,18 @@ src_compile() {
 	return
 }
 src_install() {
-	dodir /opt/authy
 	exeinto /opt/authy
 	doexe "${S}"/authy/*
 	dosym ../../opt/authy/authy /usr/bin/authy
 	insinto /opt/authy
-	dodir "/opt/authy/lib/x86_64-linux-gnu"
 	insinto "/opt/authy/lib/x86_64-linux-gnu/"
 	doins "${S}"/authy/lib/x86_64-linux-gnu/*
-	dodir "/opt/authy/locales"
 	insinto "/opt/authy/locales"
 	doins "${S}"/authy/locales/*
 
-	dodir "/opt/authy/resources"
 	insinto "/opt/authy/resources"
 	doins "${S}"/authy/resources/*
 
-	dodir "/opt/authy/swiftshader"
 	insinto "/opt/authy/swiftshader"
 	doins "${S}"/authy/swiftshader/*
 
