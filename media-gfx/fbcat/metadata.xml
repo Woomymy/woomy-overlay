@@ -6,6 +6,6 @@
     <name>Woomy</name>
   </maintainer>
   <longdescription>
-    fbcat takes a screenshot using the Linux framebuffer device.
+    fbcat is a tool that takes a screenshot using the Linux framebuffer device and outputs it in a picture
   </longdescription>
 </pkgmetadata>
