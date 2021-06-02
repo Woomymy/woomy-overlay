@@ -5,7 +5,7 @@ EAPI=7
 
 DESCRIPTION="Control networkmanager using DMENU"
 HOMEPAGE="https://github.com/firecat53/networkmanager-dmenu"
-SRC_URI="https://github.com/firecat53/networkmanager-dmenu/archive/v${PV}.tar.gz"
+SRC_URI="https://github.com/firecat53/networkmanager-dmenu/archive/v${PV}.tar.gz -> networkmanager-dmenu-${PV}.tar.gz"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
