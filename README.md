@@ -1,75 +1,21 @@
-# How to install this repository
+<!--markdownlint-disable-file MD013-->
+# Woomy-overlay
 
-## 1. Add an entry to [/etc/portage/repos.conf](https://wiki.gentoo.org/wiki//etc/portage/repos.conf)
+[![Overlay QA](https://github.com/Woomymy/woomy-overlay/actions/workflows/ci.yml/badge.svg)](https://github.com/Woomymy/woomy-overlay/actions/workflows/ci.yml)
 
-```
-[myportage]
-location = /usr/local/overlays/myportage
-#          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ set this to any location you want
-sync-uri = https://github.com/turulomio/myportage.git
-sync-type = git
-auto-sync = yes
-```
+> A Gentoo overlay that provides some packages
 
-## 2. Sync overlay
-Ejecute this command in console 
+## Install
 
-`emerge --sync myportage`
+To install this overlay, you can use the `app-eselect/eselect-repository` tool.
+> NOTE: You can also use layman but this guide will show the procedure for eselect-repository.
 
-# List of ebuilds
-## <a href="https://authy.com/"><img src="https://raw.githubusercontent.com/turulomio/gentoo_overlay_autodoc/master/gentoo_overlay_autodoc/images/home.png" style="vertical-align:middle;" width="5%" /></a>  <a href="https://github.com/turulomio/myportage/tree/master/app-misc/authy">app-misc/authy</a>
+**Make sure dev-vcs/git and app-eselect/eselect-repository tools are installed!**
 
-2FA software
+To install the repository you just need to run
 
+```eselect repository add woomy-overlay git https://github.com/woomymy/woomy-overlay.git```
 
-## <a href="https://github.com/Woomy4680-exe/kelp"><img src="https://raw.githubusercontent.com/turulomio/gentoo_overlay_autodoc/master/gentoo_overlay_autodoc/images/home.png" style="vertical-align:middle;" width="5%" /></a>  <a href="https://github.com/turulomio/myportage/tree/master/app-misc/kelpdot">app-misc/kelpdot</a>
+> NOTE: if you use Calculate Linux you can enable updates from other overlays by typing
+> ``cl-core-variables --set update.cl_update_other_set=on``
 
-Simple dotfiles manager
-
-
-## <a href="https://github.com/nushell/nushell"><img src="https://raw.githubusercontent.com/turulomio/gentoo_overlay_autodoc/master/gentoo_overlay_autodoc/images/home.png" style="vertical-align:middle;" width="5%" /></a>  <a href="https://github.com/turulomio/myportage/tree/master/app-shells/nushell">app-shells/nushell</a>
-
-A new type of shell
-
-
-## <a href="https://nushell.sh"><img src="https://raw.githubusercontent.com/turulomio/gentoo_overlay_autodoc/master/gentoo_overlay_autodoc/images/home.png" style="vertical-align:middle;" width="5%" /></a>  <a href="https://github.com/turulomio/myportage/tree/master/app-shells/nushell-bin">app-shells/nushell-bin</a>
-
-A new type of Shell
-
-
-## <a href="https://texlab.netlify.app"><img src="https://raw.githubusercontent.com/turulomio/gentoo_overlay_autodoc/master/gentoo_overlay_autodoc/images/home.png" style="vertical-align:middle;" width="5%" /></a>  <a href="https://github.com/turulomio/myportage/tree/master/app-text/texlab-bin">app-text/texlab-bin</a>
-
-LSP for LaTex
-
-
-## <a href="https://yamllint.readthedocs.io/"><img src="https://raw.githubusercontent.com/turulomio/gentoo_overlay_autodoc/master/gentoo_overlay_autodoc/images/home.png" style="vertical-align:middle;" width="5%" /></a>  <a href="https://github.com/turulomio/myportage/tree/master/dev-python/yamllint">dev-python/yamllint</a>
-
-A linter for YAML files.
-
-
-## <a href="https://github.com/wafelack/wng"><img src="https://raw.githubusercontent.com/turulomio/gentoo_overlay_autodoc/master/gentoo_overlay_autodoc/images/home.png" style="vertical-align:middle;" width="5%" /></a>  <a href="https://github.com/turulomio/myportage/tree/master/dev-util/wng">dev-util/wng</a>
-
-The W package manager | WNG is a C package and projects manager written in Rust.
-
-
-## <a href="https://github.com/Wafelack/wng"><img src="https://raw.githubusercontent.com/turulomio/gentoo_overlay_autodoc/master/gentoo_overlay_autodoc/images/home.png" style="vertical-align:middle;" width="5%" /></a>  <a href="https://github.com/turulomio/myportage/tree/master/dev-util/wng-bin">dev-util/wng-bin</a>
-
-A C package and projects manager written in Rust.
-
-
-## <a href="https://github.com/jwilk/fbcat/"><img src="https://raw.githubusercontent.com/turulomio/gentoo_overlay_autodoc/master/gentoo_overlay_autodoc/images/home.png" style="vertical-align:middle;" width="5%" /></a>  <a href="https://github.com/turulomio/myportage/tree/master/media-gfx/fbcat">media-gfx/fbcat</a>
-
-Framebuffer grabber
-
-
-## <a href="https://github.com/firecat53/networkmanager-dmenu"><img src="https://raw.githubusercontent.com/turulomio/gentoo_overlay_autodoc/master/gentoo_overlay_autodoc/images/home.png" style="vertical-align:middle;" width="5%" /></a>  <a href="https://github.com/turulomio/myportage/tree/master/net-misc/networkmanager-dmenu">net-misc/networkmanager-dmenu</a>
-
-Control networkmanager using DMENU
-
-
-## <a href="https://github.com/LongSoft/UEFITool/"><img src="https://raw.githubusercontent.com/turulomio/gentoo_overlay_autodoc/master/gentoo_overlay_autodoc/images/home.png" style="vertical-align:middle;" width="5%" /></a>  <a href="https://github.com/turulomio/myportage/tree/master/sys-firmware/uefitool">sys-firmware/uefitool</a>
-
-C++/Qt program for parsing, extracting and modifying UEFI firmware images
-
-
-<p style='text-align: right;'>This page has been autogenerated with <a href="https://github.com/turulomio/gentoo_overlay_autodoc">Gentoo Overlay Autodoc</a></p>
