@@ -6,6 +6,6 @@
     <name>Woomy</name>
   </maintainer>
   <longdescription>
-    A new type of shell
+    Nushell is a powerful, plugable and cross-platform shell written using the Rust programming language.
   </longdescription>
 </pkgmetadata>
