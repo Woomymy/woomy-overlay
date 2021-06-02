@@ -6,7 +6,7 @@
     <name>Woomy</name>
   </maintainer>
   <longdescription>
-    A rofi / Dmenu based interface to manage networkmanager
+    User-friendly interface to control networkmanager with rofi / dmenu. Lighter Nm-applet replacement for WM(s)
   </longdescription>
   <use>
     <flag name="dmenu">Use with dmenu</flag>
