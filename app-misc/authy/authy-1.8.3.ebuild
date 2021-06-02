@@ -3,6 +3,8 @@
 
 EAPI=7
 
+inherit desktop
+
 DESCRIPTION="2FA software"
 HOMEPAGE="https://authy.com/"
 SRC_URI="https://api.snapcraft.io/api/v1/snaps/download/H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_5.snap"
@@ -53,6 +55,5 @@ src_install() {
 	insinto "/opt/authy/swiftshader"
 	doins "${S}"/authy/swiftshader/*
 
-	insinto /usr/share/applications
-	doins "${FILESDIR}/authy.desktop"
+	domenu "${FILESDIR}/authy.desktop"
 }
