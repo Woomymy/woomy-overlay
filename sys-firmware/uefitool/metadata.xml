@@ -6,6 +6,6 @@
     <name>Woomy</name>
   </maintainer>
   <longdescription>
-    Qt program for parsing, extracting and modifying UEFI firmware images
+    Cross-platform Advanced Qt/C++ tool for modifiying, extracting and manupulating UEFI firmware images files
   </longdescription>
 </pkgmetadata>
