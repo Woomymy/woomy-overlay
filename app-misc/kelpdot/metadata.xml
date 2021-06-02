@@ -6,6 +6,6 @@
     <name>Woomy</name>
   </maintainer>
   <longdescription>
-    Simple dotfiles manager written in rust
+    Simple dotfiles manager written in rust with features like portage support, os detection, automatic configuration and configurable using YAML
   </longdescription>
 </pkgmetadata>
