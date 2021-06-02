@@ -7,7 +7,7 @@ DESCRIPTION="C++/Qt program for parsing, extracting and modifying UEFI firmware 
 HOMEPAGE="https://github.com/LongSoft/UEFITool/"
 SRC_URI="https://github.com/LongSoft/UEFITool/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
-inherit qmake-utils
+inherit desktop qmake-utils
 
 LICENSE="BSD-2"
 SLOT="0"
@@ -28,7 +28,6 @@ src_configure() {
 
 src_install() {
 	dobin "${TRUE_PN}"
-	insinto /usr/share/applications
-	doins "${FILESDIR}/UefiTool.desktop"
+	domenu "${FILESDIR}/UefiTool.desktop"
 	einstalldocs
 }
