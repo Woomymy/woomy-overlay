@@ -661,7 +661,7 @@ inherit cargo
 
 DESCRIPTION="A new type of shell"
 HOMEPAGE="https://github.com/nushell/nushell"
-SRC_URI="https://github.com/nushell/nushell/archive/${PV}.tar.gz $(cargo_crate_uris ${CRATES})"
+SRC_URI="https://github.com/nushell/nushell/archive/${PV}.tar.gz -> nushell-${PV}.tar.gz  $(cargo_crate_uris ${CRATES})"
 RESTRICT="mirror"
 LICENSE="MIT"
 SLOT="0"
