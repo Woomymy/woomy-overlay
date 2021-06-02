@@ -6,6 +6,6 @@
     <name>Woomy</name>
   </maintainer>
   <longdescription>
-    Desktop client of Authy, a cross-platform two-factors authentification app synced between devices
+    Desktop client for Authy, a cross-platform two-factors authentification app synced between devices (extracted from snap package)
   </longdescription>
 </pkgmetadata>
