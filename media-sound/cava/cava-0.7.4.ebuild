@@ -8,7 +8,7 @@ inherit autotools
 DESCRIPTION="Console-based Audio visualizer for ALSA"
 HOMEPAGE="https://github.com/karlstav/cava/"
 SRC_URI="https://github.com/karlstav/cava/archive/refs/tags/${PV}.tar.gz -> cava-${PV}.tar.gz"
-IUSE="portaudio pulseaudio alsa"
+IUSE="portaudio +pulseaudio alsa"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
