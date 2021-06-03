@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>github@woomy.ovh</email>
+    <name>Woomy</name>
+  </maintainer>
+  <longdescription>
+    CAVA (console-based audio visualizer for Alsa) is an audio visualizer that supports inputs from Pulseaudio, ALSA, fifo, sndio, squeezelite and portaudio
+  </longdescription>
+</pkgmetadata>
