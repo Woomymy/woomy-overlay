@@ -13,7 +13,10 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="amd64"
 
-DEPEND=""
+DEPEND="
+	media-video/ffmpeg
+	media-libs/libglvnd
+"
 RDEPEND="${DEPEND}"
 BDEPEND="
 	app-arch/dpkg
@@ -24,6 +27,7 @@ src_unpack() {
 }
 
 src_install() {
+	rm -rf "${S}"/opt/Session/{*ffmpeg.so,swiftshader,*GL*,session-desktop}
 	insinto /opt/Session
 	doins -r opt/Session/*
 	for file in session-desktop session-desktop-bin crashpad_handler
