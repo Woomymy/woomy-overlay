@@ -15,10 +15,17 @@ KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND="
+	media-video/ffmpeg
 	dev-libs/libdbusmenu
 	dev-libs/libappindicator
 	dev-libs/nss
 	x11-libs/gtk+:3
+	sys-apps/dbus
+	dev-libs/libbsd
+	dev-libs/expat
+	sys-apps/keyutils
+	sys-libs/e2fsprogs-libs
+	media-libs/libglvnd
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
@@ -29,7 +36,7 @@ SNAP_NAME="H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_5"
 src_prepare() {
 	default
 	rdsquashfs -u / -p "${S}/authy" "${DISTDIR}/H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_5.snap"
-	rm -rf "${S}"/authy/{data-dir,gnome-platform,meta,scripts,usr,*.sh}
+	rm -rf "${S}"/authy/{*ffmpeg.so,swiftshader,*GL*,data-dir,gnome-platform,meta,scripts,usr,*.sh}
 }
 src_compile() {
 	return
@@ -39,16 +46,11 @@ src_install() {
 	doexe "${S}"/authy/*
 	dosym ../../opt/authy/authy /usr/bin/authy
 	insinto /opt/authy
-	insinto "/opt/authy/lib/x86_64-linux-gnu/"
-	doins "${S}"/authy/lib/x86_64-linux-gnu/*
 	insinto "/opt/authy/locales"
 	doins "${S}"/authy/locales/*
 
 	insinto "/opt/authy/resources"
 	doins "${S}"/authy/resources/*
-
-	insinto "/opt/authy/swiftshader"
-	doins "${S}"/authy/swiftshader/*
 
 	domenu "${FILESDIR}/authy.desktop"
 }
