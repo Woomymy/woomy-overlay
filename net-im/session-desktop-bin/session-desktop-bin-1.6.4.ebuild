@@ -27,10 +27,10 @@ src_unpack() {
 }
 
 src_install() {
-	rm -rf "${S}"/opt/Session/{*ffmpeg.so,swiftshader,*GL*,session-desktop-bin}
+	rm -rf "${S}"/opt/Session/{*ffmpeg.so,swiftshader,*GL*}
 	insinto /opt/Session
 	doins -r opt/Session/*
-	for file in session-desktop crashpad_handler
+	for file in session-desktop crashpad_handler session-desktop-bin
 	do
 		fperms +x "/opt/Session/${file}"
 	done
