@@ -27,7 +27,7 @@ src_unpack() {
 }
 
 src_install() {
-	rm -rf "${S}"/opt/Session/{*ffmpeg.so,swiftshader,*GL*}
+	rm -rf "${S}"/opt/Session/{swiftshader,*GL*}
 	insinto /opt/Session
 	doins -r opt/Session/*
 	for file in session-desktop crashpad_handler session-desktop-bin
