@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=LSP for LaTex
+EAPI=7
+HOMEPAGE=https://texlab.netlify.app
+KEYWORDS=amd64
+LICENSE=GPL-3
+SLOT=0
+SRC_URI=https://github.com/latex-lsp/texlab/releases/download/v3.1.0/texlab-x86_64-linux.tar.gz
+_md5_=8e822535b32130eb4eca08682f44a93f
