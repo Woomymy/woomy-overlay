@@ -36,7 +36,7 @@ SNAP_NAME="H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_5"
 src_prepare() {
 	default
 	rdsquashfs -u / -p "${S}/authy" "${DISTDIR}/H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_5.snap"
-	rm -rf "${S}"/authy/{*ffmpeg.so,swiftshader,*GL*,data-dir,gnome-platform,meta,scripts,usr,*.sh}
+	rm -rf "${S}"/authy/{swiftshader,*GL*,data-dir,gnome-platform,meta,scripts,usr,*.sh}
 }
 src_compile() {
 	return
