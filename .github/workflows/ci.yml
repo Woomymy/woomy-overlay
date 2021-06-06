@@ -2,7 +2,10 @@
 name: Overlay QA
 on:  # yamllint disable-line rule:truthy
   push:
-    branch: [main]
+    branches: [main]
+  pull_request:
+    branches: [main]
+
 jobs:
   repoman:
     runs-on: ubuntu-latest
