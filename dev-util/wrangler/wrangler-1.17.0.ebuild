@@ -363,3 +363,8 @@ LICENSE="Apache-2.0 MIT"
 SLOT="0"
 KEYWORDS="amd64"
 RESTRICT="mirror"
+
+src_prepare() {
+	rm -rf "${S}/rust-toolchain"
+	default_src_prepare
+}
