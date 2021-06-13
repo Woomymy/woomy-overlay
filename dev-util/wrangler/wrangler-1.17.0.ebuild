@@ -357,7 +357,7 @@ inherit cargo
 
 DESCRIPTION="Command-line interface for all things Cloudflare Workers"
 HOMEPAGE="https://github.com/cloudflare/wrangler"
-SRC_URI="$(cargo_crate_uris ${CRATES})"
+SRC_URI="$(cargo_crate_uris ${CRATES}) https://github.com/cloudflare/wrangler/archive/refs/tags/v${PV}.tar.gz"
 
 LICENSE="Apache-2.0 MIT"
 SLOT="0"
