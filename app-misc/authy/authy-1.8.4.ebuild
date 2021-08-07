@@ -29,14 +29,15 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
-	sys-fs/squashfs-tools-ng[xz]
+	sys-fs/squashfs-tools
 "
 S="${WORKDIR}"
-SNAP_NAME="H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_5"
+SNAP_NAME="H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_6"
 src_prepare() {
 	default
-	rdsquashfs -u / -p "${S}/authy" "${DISTDIR}/H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_5.snap"
-	rm -rf "${S}"/authy/{swiftshader,*GL*,data-dir,gnome-platform,meta,scripts,usr,*.sh}
+	unsquashfs "${DISTDIR}/H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_6.snap"
+	rm -rf "${S}"/squashfs-root/{swiftshader,*GL*,data-dir,gnome-platform,meta,scripts,usr,*.sh}
+	mv squashfs-root authy
 }
 src_compile() {
 	return
