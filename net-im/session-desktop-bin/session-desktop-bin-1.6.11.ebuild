@@ -30,7 +30,7 @@ src_install() {
 	rm -rf "${S}"/opt/Session/{swiftshader,*GL*}
 	insinto /opt/Session
 	doins -r opt/Session/*
-	for file in session-desktop crashpad_handler
+	for file in session-desktop
 	do
 		fperms +x "/opt/Session/${file}"
 	done
