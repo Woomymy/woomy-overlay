@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Revolt
-Exec=/opt/Revolt/revolt-desktop-bin %U
+Exec=/usr/bin/revolt-desktop-bin %U
 Terminal=false
 Type=Application
 Icon=revolt-desktop
