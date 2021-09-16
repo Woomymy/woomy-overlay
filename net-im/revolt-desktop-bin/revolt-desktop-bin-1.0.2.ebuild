@@ -3,6 +3,8 @@
 
 EAPI=7
 
+inherit desktop
+
 DESCRIPTION="Desktop client for revolt.chat"
 HOMEPAGE="https://revolt.chat"
 SRC_URI="https://github.com/revoltchat/desktop/releases/download/v${PV}/revolt-desktop-${PV}.tar.gz"
@@ -34,4 +36,7 @@ src_install() {
 	insinto "/opt/${PN}/resources"
 	doins "${S}"/${CPN}/resources/*
 
+	domenu "${FILESDIR}/${PN}.desktop"
+	insinto /usr/share/icons/hicolor/
+	doins -r "${FILESDIR}/icons/"*
 }
