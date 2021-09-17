@@ -3,11 +3,13 @@
 
 EAPI=7
 
-inherit desktop
+inherit desktop unpacker
 
 DESCRIPTION="Desktop client for revolt.chat"
 HOMEPAGE="https://revolt.chat"
-SRC_URI="https://github.com/revoltchat/desktop/releases/download/v${PV}/revolt-desktop-${PV}.tar.gz"
+SRC_URI="
+	https://github.com/revoltchat/desktop/releases/download/v${PV}/revolt-desktop_${PV}_amd64.deb
+"
 LICENSE="AGPL-3"
 SLOT="0"
 KEYWORDS="amd64"
@@ -20,23 +22,27 @@ RDEPEND="${DEPEND}"
 BDEPEND=""
 S="${WORKDIR}"
 
+src_unpack() {
+	unpack_deb "${A}"
+}
+
 src_prepare() {
 	default
-	rm -rf "${S}"/${CPN}/{swiftshader,*GL*,data-dir,gnome-platform,meta,scripts,usr,*.sh}
+	rm -rf "${S}"/opt/Revolt/{swiftshader,*GL*,data-dir,gnome-platform,meta,scripts,usr,*.sh}
 }
 
 src_install() {
 	exeinto /opt/${PN}
-	doexe "${S}"/${CPN}/*
+	doexe "${S}"/opt/Revolt/*
 	dosym ../../opt/${PN}/revolt-desktop "/usr/bin/${PN}"
-	insinto /opt/${PN}
 	insinto "/opt/${PN}/locales"
-	doins "${S}"/${CPN}/locales/*
+	doins "${S}"/opt/Revolt/locales/*
 
 	insinto "/opt/${PN}/resources"
-	doins "${S}"/${CPN}/resources/*
+	doins "${S}"/opt/Revolt/resources/*
 
-	domenu "${FILESDIR}/${PN}.desktop"
+	domenu "${S}/usr/share/applications/revolt-desktop.desktop"
+
 	insinto /usr/share/icons/hicolor/
-	doins -r "${FILESDIR}/icons/"*
+	doins -r "${S}/usr/share/icons/hicolor/"*
 }
