@@ -41,7 +41,7 @@ src_install() {
 	insinto "/opt/${PN}/resources"
 	doins "${S}"/opt/Revolt/resources/*
 
-	domenu "${S}/usr/share/applications/revolt-desktop.desktop"
+	domenu "${FILESDIR}/${PN}.desktop"
 
 	insinto /usr/share/icons/hicolor/
 	doins -r "${S}/usr/share/icons/hicolor/"*
