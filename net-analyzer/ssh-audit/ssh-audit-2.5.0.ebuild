@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/jtesta/ssh-audit"
 SRC_URI="https://github.com/jtesta/ssh-audit/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 IUSE=""
 RESTRICT="test"
 
