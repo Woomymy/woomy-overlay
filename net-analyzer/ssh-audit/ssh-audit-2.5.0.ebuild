@@ -5,7 +5,7 @@ EAPI=7
 PYTHON_COMPAT=(python3_{8,9,10})
 inherit distutils-r1
 
-DESCRIPTION="SSH server auditing (banner, key exchange, encryption, mac, compression, etc)"
+DESCRIPTION="SSH client/server auditing tool"
 HOMEPAGE="https://github.com/jtesta/ssh-audit"
 SRC_URI="https://github.com/jtesta/ssh-audit/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="MIT"
