@@ -13,11 +13,13 @@ KEYWORDS="amd64 x86"
 
 DEPEND=""
 RDEPEND="${DEPEND}"
-BDEPEND=""
+BDEPEND="
+	dev-go/go-md2man
+"
 
 S="${WORKDIR}/brillo-v${PV}"
 
 src_install() {
-	emake install
-	emake install.udev
+	emake DESTDIR="${D}" install
+	emake DESTDIR="${D}" install.udev
 }
