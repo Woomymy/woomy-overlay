@@ -22,5 +22,5 @@ S="${WORKDIR}/brillo-v${PV}"
 src_install() {
 	emake DESTDIR="${D}" install
 	emake DESTDIR="${D}" install.udev
-	einfo "You may need to reboot to load new udev rule and use brillo"
+	ewarn "You may need to reboot to load new udev rule and use brillo"
 }
