@@ -9,7 +9,7 @@ SRC_URI="https://gitlab.com/cameronnemo/brillo/-/archive/v${PV}/brillo-v${PV}.ta
 
 LICENSE="GPL-3.0 BSD"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="amd64"
 
 DEPEND=""
 RDEPEND="${DEPEND}"
