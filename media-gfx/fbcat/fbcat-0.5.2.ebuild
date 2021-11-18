@@ -18,3 +18,8 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 BDEPEND=""
+
+src_install() {
+	dobin fbcat
+	dobin fbgrab
+}
