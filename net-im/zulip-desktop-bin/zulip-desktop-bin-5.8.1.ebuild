@@ -3,6 +3,8 @@
 
 EAPI=8
 
+inherit desktop
+
 DESCRIPTION="Chat for distributed teams"
 HOMEPAGE="https://zulip.com"
 SRC_URI="https://github.com/zulip/zulip-desktop/releases/download/v${PV}/Zulip-${PV}-x64.tar.xz"
@@ -12,8 +14,10 @@ SLOT="0"
 KEYWORDS="amd64"
 
 DEPEND="
+	dev-libs/libappindicator
 	media-video/ffmpeg
 	media-libs/libglvnd
+	dev-libs/libdbusmenu
 "
 RDEPEND="${DEPEND}"
 BDEPEND=""
@@ -31,4 +35,6 @@ src_install() {
 
 	insinto "/opt/${PN}/resources"
 	doins "${S}"/resources/*
+
+	domenu "${FILESDIR}/${PN}.desktop"
 }
