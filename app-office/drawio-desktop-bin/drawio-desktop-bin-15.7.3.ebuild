@@ -35,11 +35,18 @@ S="${WORKDIR}"
 src_unpack() {
 	unpack_deb "${A}"
 }
+
+src_prepare() {
+	sed -i "s/\/opt\/drawio/\/opt\/drawio-desktop-bin/g" "${S}/usr/share/applications/drawio.desktop"
+	default
+}
+
 src_install() {
 	rm -rf "${S}"/opt/drawio/{libvulk*,swiftshader,*GL*}
 	insinto "/opt/${PN}"
 	doins -r ${S}/opt/drawio/*
 	fperms +x /opt/${PN}/drawio
+	dosym "../../opt/${PN}/drawio" /usr/bin/drawio
 	insinto "/usr/share/icons/hicolor"
 	doins -r "${S}/usr/share/icons/hicolor"/*
 	domenu usr/share/applications/*.desktop
