@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>github@woomy.ovh</email>
+    <name>Woomy</name>
+  </maintainer>
+  <longdescription>
+    Draw.io desktop client. Draw.io is a configurable diagramming/whiteboarding visualization application. draw.io is owned and developed by JGraph Ltd, a UK based software company.
+  </longdescription>
+</pkgmetadata>
