@@ -29,7 +29,7 @@ src_install() {
 	doexe networkmanager_dmenu
 	domenu networkmanager_dmenu.desktop
 	dodoc LICENSE.txt
-	dodoc README.rst
+	dodoc README.md
 	dodoc config.ini.example
 	elog "Now you need to configure the package."
 	elog "Configuration guide: https://github.com/firecat53/networkmanager-dmenu#installation"
