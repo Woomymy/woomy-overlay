@@ -33,6 +33,7 @@ S="${WORKDIR}/${PN}"
 
 src_unpack() {
 	unpack_appimage "${DISTDIR}/${A}" "${S}"
+	rm -rf "${S}"/{@joplinapp-desktop.*,lib{EGL*,vul*},swiftshader}
 }
 
 src_install() {
