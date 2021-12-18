@@ -1,15 +1,15 @@
 # Copyright 2021-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
-inherit desktop
+EAPI=8
+inherit desktop appimage-extract
 
 DESCRIPTION="Note taking and to-do application."
 HOMEPAGE="https://joplinapp.org/"
 
 KEYWORDS="amd64"
 
-SRC_URI="https://files.woomy.ovh/joplin_bin/${PN}-${PV}.tar.xz" # Repacked AppImage
+SRC_URI="https://github.com/laurent22/joplin/releases/download/v${PV}/Joplin-${PV}.AppImage" # Repacked AppImage
 
 SLOT="0"
 RESTRICT="strip"
@@ -30,6 +30,10 @@ DEPEND="${RDEPEND}"
 BDEPEND=""
 
 S="${WORKDIR}/${PN}"
+
+src_unpack() {
+	unpack_appimage "${DISTDIR}/${A}" "${S}"
+}
 
 src_install() {
 	exeinto "/opt/${PN}"
