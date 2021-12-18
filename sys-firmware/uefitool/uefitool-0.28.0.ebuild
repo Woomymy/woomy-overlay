@@ -1,7 +1,7 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 TRUE_PN="UEFITool"
 DESCRIPTION="C++/Qt program for parsing, extracting and modifying UEFI firmware images"
 HOMEPAGE="https://github.com/LongSoft/UEFITool/"
