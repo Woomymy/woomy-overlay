@@ -33,7 +33,7 @@ BDEPEND="
 S="${WORKDIR}"
 
 src_unpack() {
-	unpack_deb "${A}"
+	unpack_deb ${A}
 }
 
 src_prepare() {
@@ -44,7 +44,7 @@ src_prepare() {
 src_install() {
 	rm -rf "${S}"/opt/drawio/{libvulk*,swiftshader,*GL*}
 	insinto "/opt/${PN}"
-	doins -r ${S}/opt/drawio/*
+	doins -r "${S}/opt/drawio/"*
 	fperms +x /opt/${PN}/drawio
 	dosym "../../opt/${PN}/drawio" /usr/bin/drawio
 	insinto "/usr/share/icons/hicolor"
