@@ -12,3 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - uses: Woomymy/action-run-repoman@main
+      - uses: Woomymy/action-run-pkgcheck@main
