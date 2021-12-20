@@ -1,0 +1,61 @@
+---
+name: Check new packages versions and make pull requests
+on:  # yamllint disable-line rule:truthy
+  workflow_dispatch:
+  schedule:
+    - cron: '00 23 * * *'
+
+jobs:
+  update-ebuilds:
+    runs-on: ubuntu-latest
+    # Image already contains portage tree
+    container:
+      image: ghcr.io/woomymy/docker-euscan:main
+      volumes:
+        - /github/workspace:/github/workspace
+    outputs:
+      matrix: ${{ steps.matrix.outputs.matrix }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install JQ and zip
+        run: emerge app-misc/jq app-arch/zip
+      - uses: Woomymy/action-run-euscan@main
+      - name: Find new versions
+        run: bash .github/workflows/proceed-reports.sh
+      - name: List files
+        run: ls -R
+      - name: Generate Matrix
+        id: matrix
+        run: .github/workflows/generate-matrix.sh
+
+  generate-prs:
+    needs: ["update-ebuilds"]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: 
+        packages: ${{fromJSON(needs.update-ebuilds.outputs.matrix)}}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Change branch
+        run: |
+          git branch ${{ matrix.packages.name }}
+      - name: Fetch update
+        run: |
+          wget -O update.zip ${{ matrix.packages.upload_url }}
+          yes | unzip -o update.zip
+          rm update.zip
+      - name: Commit changes
+        run: |
+          git config --global user.name OverlayBot
+          git config --global user.email no-reply@woomy.ovh
+          git add -A
+          git commit -m "Bump ${{ matrix.packages.name }} to ${{ matrix.packages.version }}"
+          git checkout master
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          branch: ${{ matrix.packages.name }}
+          title: "Update ${{ matrix.packages.name }} to ${{ matrix.packages.version }}"
+          reviewers: Woomymy
+          assignees: Woomymy
