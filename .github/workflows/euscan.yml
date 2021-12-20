@@ -55,3 +55,8 @@ jobs:
           title: "Update ${{ matrix.packages.name }} to ${{ matrix.packages.version }}"
           reviewers: Woomymy
           assignees: Woomymy
+          delete-branch: true
+          body: |
+            Automatic update of ${{ matrix.packages.name }} to ${{ matrix.packages.version }}.
+          labels: auto-update,package-update
+
