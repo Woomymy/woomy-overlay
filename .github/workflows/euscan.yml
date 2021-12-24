@@ -28,6 +28,7 @@ jobs:
   generate-prs:
     needs: ["update-ebuilds"]
     runs-on: ubuntu-latest
+    if: ${{ needs.update-ebuilds.outputs.matrix != "[]" && needs.update-ebuilds.outputs.matrix != "" }}
     strategy:
       matrix: 
         packages: ${{fromJSON(needs.update-ebuilds.outputs.matrix)}}
