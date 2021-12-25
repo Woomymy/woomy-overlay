@@ -25,7 +25,7 @@ for REPORT in *.json; do
 		FNAME="$(echo "${PN}" | awk -F "/" '{print $2}')"
 		REPORTS="${PWD}"
 		cd $ROOT
-        .github/workflows/update-ebuilds.sh "${PN}" "${VERSION}"
+        .github/bin/update-ebuilds.sh "${PN}" "${VERSION}"
 		zip -r9 "${FNAME}.zip" -- "${PN}/Manifest" "${PN}/${FNAME}-${VERSION}.ebuild"
 		UPLOAD="$(curl --upload-file "${FNAME}.zip" https://transfer.sh/${FNAME})"
 		cd $REPORTS
