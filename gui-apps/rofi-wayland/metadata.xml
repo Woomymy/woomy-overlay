@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>github@woomy.ovh</email>
+    <name>Woomy</name>
+  </maintainer>
+  <longdescription>
+    Fork of rofi - A window switcher, run dialog and dmenu replacement with wayland support and optional X support
+  </longdescription>
+  <use>
+    <flag name="window">
+      Add `window` modi support (only aviable on X)
+    </flag>
+  </use>
+</pkgmetadata>
