@@ -83,8 +83,14 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 DEPEND=""
-RDEPEND="${DEPEND}"
-BDEPEND=""
+RDEPEND="
+	${DEPEND}
+	sys-auth/polkit
+	media-sound/pulseaudio
+"
+BDEPEND="
+	dev-lang/go
+"
 
 src_install() {
 	# Install icons
