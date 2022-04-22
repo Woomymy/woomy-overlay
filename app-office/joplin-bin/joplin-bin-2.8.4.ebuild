@@ -46,7 +46,7 @@ src_install() {
 	doins "${S}"/locales/*
 
 	insinto "/opt/${PN}/resources"
-	doins "${S}"/resources/*
+	doins -r "${S}"/resources/*
 
 	insinto "/usr/share/icons/hicolor"
 	doins -r "${S}/usr/share/icons/hicolor"/*
