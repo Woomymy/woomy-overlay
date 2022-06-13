@@ -24,10 +24,12 @@ BDEPEND=""
 S="${WORKDIR}"
 
 src_install() {
-	insinto /opt/${PN}
-	dobin "${S}/fluffychat"
+	insinto "/opt/${PN}"
+	exeinto "/opt/${PN}"
+	doexe "${S}/fluffychat"
 	doins -r "${S}/lib"
 	doins -r "${S}/data"
+
 	dosym "../../opt/${PN}/fluffychat" "/usr/bin/fluffychat"
 	domenu "${FILESDIR}/${PN}.desktop"
 }
