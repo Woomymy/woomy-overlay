@@ -7,7 +7,7 @@ inherit desktop
 
 DESCRIPTION="Chat with your friends"
 HOMEPAGE="https://fluffychat.im"
-SRC_URI="https://gitlab.com/api/v4/projects/16112282/packages/generic/fluffychat/${PV}/fluffychat-linux-arm64.tar.gz"
+SRC_URI="https://gitlab.com/api/v4/projects/16112282/packages/generic/fluffychat/${PV}/fluffychat-linux-x86.tar.gz"
 
 LICENSE=""
 SLOT="0"
