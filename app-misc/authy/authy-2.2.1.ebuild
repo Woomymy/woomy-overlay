@@ -45,6 +45,8 @@ src_compile() {
 src_install() {
 	exeinto /opt/authy
 	doexe "${S}"/authy/*
+	dosym /usr/lib64/libGLESv2.so /opt/authy/libGLESv2.so
+	dosym /usr/lib64/libEGL.so /opt/authy/libEGL.so
 	dosym ../../opt/authy/authy /usr/bin/authy
 	insinto /opt/authy
 	insinto "/opt/authy/locales"
