@@ -5,7 +5,7 @@ EAPI=8
 
 DESCRIPTION="LSP for LaTex"
 HOMEPAGE="https://texlab.netlify.app"
-SRC_URI="https://github.com/latex-lsp/texlab/releases/download/v${PV}/texlab-x86_64-linux.tar.gz"
+SRC_URI="https://github.com/latex-lsp/texlab/releases/download/v${PV}/texlab-x86_64-linux.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
