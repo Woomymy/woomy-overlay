@@ -3,11 +3,9 @@
 
 EAPI=8
 
-MY_PV="${PV//./-}"
-
 DESCRIPTION="Rust LSP server"
 HOMEPAGE="https://rust-analyzer.github.io"
-SRC_URI="https://github.com/rust-analyzer/rust-analyzer/releases/download/${MY_PV}/rust-analyzer-x86_64-unknown-linux-gnu.gz -> ${P}.gz"
+SRC_URI="https://github.com/rust-analyzer/rust-analyzer/releases/download/${PV//./-}/rust-analyzer-x86_64-unknown-linux-gnu.gz -> ${P}.gz"
 
 LICENSE="Apache-2.0 MIT"
 SLOT="0"
