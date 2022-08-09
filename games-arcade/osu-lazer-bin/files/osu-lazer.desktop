@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=osu!
+Icon=osu
+Comment=A free-to-win rhythm game. Rhythm is just a *click* away!
+Terminal=false
+Categories=Game;
+Exec=/usr/bin/osu
+
