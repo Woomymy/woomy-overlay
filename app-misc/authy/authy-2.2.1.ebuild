@@ -25,7 +25,7 @@ DEPEND="
 	dev-libs/libbsd
 	dev-libs/expat
 	sys-apps/keyutils
-	sys-libs/e2fsprogs-libs
+	sys-fs/e2fsprogs
 	media-libs/libglvnd
 "
 RDEPEND="${DEPEND}"
