@@ -6,6 +6,11 @@
     <name>Woomy</name>
   </maintainer>
   <longdescription>
-    CAVA (console-based audio visualizer for Alsa) is an audio visualizer that supports inputs from Pulseaudio, ALSA, fifo, sndio, squeezelite and portaudio
+    CAVA (console-based audio visualizer for Alsa) is an audio visualizer that supports inputs from Pulseaudio, ALSA, fifo, squeezelite and portaudio
   </longdescription>
+  <use>
+    <flag name="sndio">
+      Add support for <pkg>media-sound/sndio</pkg>
+	</flag>
+  </use>
 </pkgmetadata>
