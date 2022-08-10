@@ -6,6 +6,6 @@
     <name>Woomy</name>
   </maintainer>
   <longdescription>
-    DUF - Disk Usage/Free Utility - a better 'df' alternative written in go
+    DUF - Disk Usage/Free Utility - a better cross-platform 'df' alternative written using the GO programming language
   </longdescription>
 </pkgmetadata>
