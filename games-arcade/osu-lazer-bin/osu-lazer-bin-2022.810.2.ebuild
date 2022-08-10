@@ -34,11 +34,11 @@ src_install() {
 	do
 		doins -r "${d}"
 	done
-	doexe ${S}/usr/bin/*.dll
-	doins ${S}/usr/bin/*.json
-	doins ${S}/usr/bin/*.xml
-	doins ${S}/usr/bin/*.so
-	doexe ${S}/usr/bin/osu!
+	doexe "${S}/usr/bin/"*.dll
+	doins "${S}/usr/bin/"*.json
+	doins "${S}/usr/bin/"*.xml
+	doins "${S}/usr/bin/"*.so
+	doexe "${S}/usr/bin/osu!"
 	dosym "../../opt/${PN}/osu!" /usr/bin/osu
 	domenu "${FILESDIR}/osu-lazer.desktop"
 }
