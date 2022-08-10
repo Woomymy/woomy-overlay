@@ -9,7 +9,7 @@ DESCRIPTION="The future of osu! and the beginning of an open era!"
 HOMEPAGE="https://osu.ppy.sh"
 SRC_URI="https://github.com/ppy/osu/releases/download/${PV}/osu.AppImage -> ${P}.AppImage"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
@@ -42,4 +42,3 @@ src_install() {
 	dosym "../../opt/${PN}/osu!" /usr/bin/osu
 	domenu "${FILESDIR}/osu-lazer.desktop"
 }
-
