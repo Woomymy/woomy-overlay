@@ -10,7 +10,7 @@ SRC_URI="
 	https://files.woomy.ovh/distfiles/${CATEGORY}/${PN}/${P}-deps.tar.xz
 "
 HOMEPAGE="https://github.com/muesli/duf"
-DESCRIPTION="Disk Usage/Free Utility - a better 'df' alternative"
+DESCRIPTION="Disk Usage/Free Utility"
 
 LICENSE="MIT"
 SLOT="0"
