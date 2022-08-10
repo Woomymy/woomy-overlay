@@ -8,7 +8,7 @@ inherit autotools
 DESCRIPTION="Console-based Audio visualizer for ALSA"
 HOMEPAGE="https://github.com/karlstav/cava/"
 SRC_URI="https://github.com/karlstav/cava/archive/refs/tags/${PV}.tar.gz -> cava-${PV}.tar.gz"
-IUSE="portaudio +pulseaudio alsa"
+IUSE="portaudio +pulseaudio alsa sndio"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
@@ -22,6 +22,7 @@ RDEPEND="
 	alsa? ( media-libs/alsa-lib )
 	portaudio? ( media-libs/portaudio )
 	pulseaudio? ( media-sound/pulseaudio )
+	sndio? ( media-sound/sndio )
 "
 BDEPEND=""
 
@@ -31,7 +32,7 @@ src_prepare() {
 }
 
 src_configure() {
-	econf "$(use_enable alsa input-alsa)" "$(use_enable pulseaudio input-pulse)" "$(use_enable portaudio input-portaudio)"
+	econf "$(use_enable alsa input-alsa)" "$(use_enable pulseaudio input-pulse)" "$(use_enable portaudio input-portaudio) $(use_enable sndio input-sndio)"
 }
 
 src_compile() {
