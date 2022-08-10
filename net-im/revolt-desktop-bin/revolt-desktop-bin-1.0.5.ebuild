@@ -9,6 +9,7 @@ DESCRIPTION="Desktop client for revolt.chat"
 HOMEPAGE="https://revolt.chat"
 SRC_URI="
 	https://github.com/revoltchat/desktop/releases/download/v${PV}/revolt-desktop-${PV}.tar.gz
+	https://github.com/revoltchat/desktop/raw/7a3e770c3786abb7e4c5192b08364133cc4e9579/assets/icon.png -> ${PN}.png
 "
 LICENSE="AGPL-3"
 SLOT="0"
@@ -38,5 +39,5 @@ src_install() {
 	doins "${S}"/resources/*
 
 	domenu "${FILESDIR}/${PN}.desktop"
-	doicon "${FILESDIR}/${PN}.png"
+	doicon "${DISTDIR}/${PN}.png"
 }
