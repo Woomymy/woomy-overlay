@@ -17,7 +17,6 @@ LICENSE="MIT"
 IUSE=""
 
 RDEPEND="
-	gnome-base/gconf
 	x11-libs/libXtst
 	x11-libs/libXScrnSaver
 	x11-libs/libnotify
