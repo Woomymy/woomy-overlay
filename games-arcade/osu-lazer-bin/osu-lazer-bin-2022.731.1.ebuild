@@ -14,7 +14,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 DEPEND="
-	sys-fs/fuse
+	sys-fs/fuse:0
 	virtual/opengl
 	sys-libs/zlib
 "
