@@ -5,8 +5,6 @@ EAPI=8
 
 inherit desktop go-module
 
-go-module_set_globals
-
 RNNOISE_COMMIT="1cbdbcf1283499bbb2230a6b0f126eb9b236defd"
 RINGBUF_COMMIT="2037560fb90dea5d2538611d983964d790bdbac2"
 
