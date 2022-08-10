@@ -6,11 +6,6 @@
     <name>Woomy</name>
   </maintainer>
   <longdescription>
-    CAVA (console-based audio visualizer for Alsa) is an audio visualizer that supports inputs from Pulseaudio, ALSA, fifo, squeezelite and portaudio
+    Toggle NVIDIA Optimus Graphics Card if it's not used (currently only available for NVIDIA / Intel) (patched version with 5.18.0 and up support)
   </longdescription>
-  <use>
-    <flag name="sndio">
-      Add support for <pkg>media-sound/sndio</pkg>
-    </flag>
-  </use>
 </pkgmetadata>
