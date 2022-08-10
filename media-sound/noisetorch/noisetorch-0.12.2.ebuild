@@ -33,8 +33,8 @@ BDEPEND="
 "
 
 src_prepare() {
-	mv ${WORKDIR}/c-ringbuf-${RINGBUF_COMMIT}/* "${S}/c/c-ringbuf"
-	mv ${WORKDIR}/rnnoise-${RNNOISE_COMMIT}/* "${S}/c/rnnoise"
+	mv "${WORKDIR}/c-ringbuf-${RINGBUF_COMMIT}/"* "${S}/c/c-ringbuf"
+	mv "${WORKDIR}/rnnoise-${RNNOISE_COMMIT}/"* "${S}/c/rnnoise"
 	# Remove call to git submodule update done by the Makefile
 	# Replace it by `true` to prevenr problems if call options are changed
 	sed -i "s/git submodule/true/gim" "${S}/Makefile"
