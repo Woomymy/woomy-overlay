@@ -4,7 +4,7 @@
 
 EAPI=7
 
-inherit linux-mod toolchain-funcs
+inherit linux-mod
 
 if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
@@ -37,13 +37,13 @@ pkg_setup() {
 	BUILD_PARAMS="KVERSION=${KV_FULL}"
 	# Fix clang support
 	if linux_chkconfig_present CC_IS_CLANG; then
-                 BUILD_PARAMS+=' CC=${CHOST}-clang'
-                 if linux_chkconfig_present LD_IS_LLD; then
-                         BUILD_PARAMS+=' LD=ld.lld'
-                         if linux_chkconfig_present LTO_CLANG_THIN; then
-                                 BUILD_PARAMS+=' ldflags-y=--thinlto-cache-dir= LDFLAGS_MODULE=--thinlto-cache-dir='
-                         fi
-                 fi
+		BUILD_PARAMS+=' CC=${CHOST}-clang'
+		if linux_chkconfig_present LD_IS_LLD; then
+			BUILD_PARAMS+=' LD=ld.lld'
+			if linux_chkconfig_present LTO_CLANG_THIN; then
+				BUILD_PARAMS+=' ldflags-y=--thinlto-cache-dir= LDFLAGS_MODULE=--thinlto-cache-dir='
+			fi
+		fi
 	fi
 
 	BUILD_TARGETS="default"
