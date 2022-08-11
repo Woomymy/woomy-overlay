@@ -26,7 +26,7 @@ for REPORT in *.json; do
 		REPORTS="${PWD}"
 		cd $ROOT
         .github/bin/update-ebuilds.sh "${PN}" "${VERSION}"
-		zip -r9 "${FNAME}.zip" -- "${PN}/Manifest" "${PN}/${FNAME}-${VERSION}.ebuild"
+		zip -r9 "${FNAME}.zip" -- "${PN}"
 		UPLOAD="$(curl --upload-file "${FNAME}.zip" https://transfer.sh/${FNAME})"
 		cd $REPORTS
 		echo -n "{\"name\":\"${PN}\",\"version\":\"${VERSION}\",\"upload_url\":\"${UPLOAD}\"}" | tee -a "${UPDATES_FILE}"
