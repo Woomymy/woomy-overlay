@@ -19,7 +19,7 @@ echo "-- Copying ${SOURCE} to ${DEST}"
 
 # Skip if file already exists
 if [[ "${SOURCE}" != "${DEST}" ]]; then
-    cp "${SOURCE}" "${DEST}"
+    mv "${SOURCE}" "${DEST}"
 fi
 
 echo "-- Regenerating manifest of ${DEST}"
