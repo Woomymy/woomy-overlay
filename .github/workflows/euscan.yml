@@ -39,6 +39,7 @@ jobs:
           git branch ${{ matrix.packages.name }}
       - name: Download generated ebuild and Manifest
         run: |
+          rm -rf ${{ matrix.packages.name }}
           wget -O update.zip ${{ matrix.packages.upload_url }}
           yes | unzip -o update.zip
           rm update.zip
