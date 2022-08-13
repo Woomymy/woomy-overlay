@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit desktop
+inherit desktop electron-base
 
 DESCRIPTION="Chat for distributed teams"
 HOMEPAGE="https://zulip.com"
@@ -26,6 +26,7 @@ S="${WORKDIR}/Zulip-${PV}-x64"
 src_install() {
 	rm -rf "${S}"/{libvulkan*,swiftshader,*GL*}
 	exeinto "/opt/${PN}"
+	electron_libs_link "/opt/${PN}" "../../usr/lib64"
 	doexe "${S}"/{zulip,*.so,chrome-sandbox}
 	dosym "../../opt/${PN}/zulip" "/usr/bin/zulip"
 	insinto "/opt/${PN}"
