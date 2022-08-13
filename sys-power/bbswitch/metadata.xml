@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>github@woomy.ovh</email>
+    <name>Woomy</name>
+  </maintainer>
+  <longdescription>
+    Toggle NVIDIA Optimus Graphics Card if it's not used (currently only available for NVIDIA / Intel) (patched version with 5.18.0 and up support)
+  </longdescription>
+</pkgmetadata>
