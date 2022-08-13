@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit desktop
+inherit desktop electron-base
 
 DESCRIPTION="Desktop client for revolt.chat"
 HOMEPAGE="https://revolt.chat"
@@ -31,6 +31,7 @@ src_prepare() {
 src_install() {
 	exeinto /opt/${PN}
 	doexe "${S}"/*
+	electron_libs_link "/opt/${PN}" "../../usr/lib64"
 	dosym ../../opt/${PN}/revolt-desktop "/usr/bin/${PN}"
 	insinto "/opt/${PN}/locales"
 	doins "${S}"/locales/*
