@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit unpacker desktop
+inherit unpacker desktop electron-base
 
 DESCRIPTION="Session encrypted messenger desktop client"
 HOMEPAGE="https://getsession.org"
@@ -30,6 +30,7 @@ src_install() {
 	rm -rf "${S}"/opt/Session/{swiftshader,*GL*}
 	insinto /opt/Session
 	doins -r opt/Session/*
+	electron_libs_link "/opt/${PN}" "../../usr/lib64"
 	for file in session-desktop
 	do
 		fperms +x "/opt/Session/${file}"
