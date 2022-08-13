@@ -35,7 +35,8 @@ src_install() {
 	do
 		fperms +x "/opt/${PN}/${file}"
 	done
-	domenu usr/share/applications/*.desktop
+	sed -i "s/\/opt\/Session/\/opt\/${PN}/gim" usr/share/applications/session-desktop.desktop
+	domenu usr/share/applications/session-desktop.desktop
 	gunzip -c usr/share/doc/session-desktop/changelog.gz > changelog || die
 	dodoc changelog
 	insinto /usr/share/icons/hicolor/
