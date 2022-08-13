@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-inherit unpacker desktop
+inherit unpacker desktop electron-base
 
 DESCRIPTION="Diagram drawing application built on web technology"
 HOMEPAGE="https://app.diagrams.net"
@@ -45,6 +45,7 @@ src_install() {
 	rm -rf "${S}"/opt/drawio/{libvulk*,swiftshader,*GL*}
 	insinto "/opt/${PN}"
 	doins -r "${S}/opt/drawio/"*
+	electron_libs_link "/opt/${PN}" "../../usr/lib64"
 	fperms +x /opt/${PN}/drawio
 	dosym "../../opt/${PN}/drawio" /usr/bin/drawio
 	insinto "/usr/share/icons/hicolor"
