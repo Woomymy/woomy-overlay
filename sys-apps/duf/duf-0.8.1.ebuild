@@ -12,7 +12,7 @@ SRC_URI="
 HOMEPAGE="https://github.com/muesli/duf"
 DESCRIPTION="Disk Usage/Free Utility"
 
-LICENSE="MIT"
+LICENSE="MIT Apache-2.0 BSD-3-CLAUSE"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
@@ -23,12 +23,11 @@ BDEPEND="
 "
 
 src_compile() {
-	go build || die "Build failed!"
+	ego build
 }
 
 src_install() {
 	DOCS=( *.md )
 	einstalldocs
-	exeinto "/usr/bin"
-	doexe "${PN}"
+	dobin "${PN}"
 }
