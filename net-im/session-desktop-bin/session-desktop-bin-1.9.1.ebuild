@@ -28,12 +28,12 @@ src_unpack() {
 
 src_install() {
 	rm -rf "${S}"/opt/Session/{swiftshader,*GL*}
-	insinto /opt/Session
+	insinto /opt/${PN}
 	doins -r opt/Session/*
 	electron_libs_link "/opt/${PN}" "../../usr/lib64"
 	for file in session-desktop
 	do
-		fperms +x "/opt/Session/${file}"
+		fperms +x "/opt/${PN}/${file}"
 	done
 	domenu usr/share/applications/*.desktop
 	gunzip -c usr/share/doc/session-desktop/changelog.gz > changelog || die
