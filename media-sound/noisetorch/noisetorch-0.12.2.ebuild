@@ -43,11 +43,7 @@ src_prepare() {
 
 src_install() {
 	# Install icons
-	insinto /usr/share/icons/hicolor/256x256/apps/
-	doins "${S}/assets/icon/${PN}.png"
-
+	doicon "${S}/assets/icon/${PN}.png"
 	domenu "${S}/assets/${PN}.desktop"
-
-	exeinto "/usr/bin"
-	doexe "bin/${PN}"
+	dobin "bin/${PN}"
 }
