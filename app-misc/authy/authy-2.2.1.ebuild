@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit desktop
+inherit desktop electron-base
 
 SNAP_NAME="H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_11"
 DESCRIPTION="2FA software"
@@ -26,7 +26,6 @@ DEPEND="
 	dev-libs/expat
 	sys-apps/keyutils
 	sys-fs/e2fsprogs
-	media-libs/libglvnd
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
@@ -45,8 +44,7 @@ src_compile() {
 src_install() {
 	exeinto /opt/authy
 	doexe "${S}"/authy/*
-	dosym ../../usr/lib64/libGLESv2.so /opt/authy/libGLESv2.so
-	dosym ../../usr/lib64/libEGL.so /opt/authy/libEGL.so
+	electron_libs_link "/opt/${PN}" "../../usr/lib64"
 	dosym ../../opt/authy/authy /usr/bin/authy
 	insinto /opt/authy
 	insinto "/opt/authy/locales"
