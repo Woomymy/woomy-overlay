@@ -9,8 +9,7 @@
 # @SUPPORTED_EAPIS: 8
 # @BLURB: Utilties to work with precompiled electron packages
 # @DESCRIPTION:
-# Symlinks some libs required by electron in package directory
-# because electron doesn't want to load them from /usr/lib64
+# Symlinks some libs required by electron in package directory because electron doesn't want to load them from /usr/lib64
 
 if [[ ! ${_ELECTRON_BASE_ECLASS} ]]; then
 
@@ -25,8 +24,9 @@ DEPEND="${DEPEND} media-libs/libglvnd media-libs/vulkan-loader"
 
 # @FUNCTION: electron_libs_link
 # @USAGE: <package dir> <relative path of lib64>
-# @DESCRIPTION: Links
-# 
+# @DESCRIPTION:
+# Links files
+#
 electron_libs_link() {
     [[ $# -eq 2 ]] || die "Usage: ${FUNCNAME} <package dir> <relative path of lib64>"
     for lib in libEGL.so libGLESv2.so libvulkan.so.1
