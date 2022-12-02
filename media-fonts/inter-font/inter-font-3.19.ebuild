@@ -7,7 +7,7 @@ inherit font
 
 DESCRIPTION="The inter font"
 HOMEPAGE="https://github.com/rsms/Inter"
-SRC_URI="https://github.com/rsms/inter/releases/download/v3.19/Inter-3.19.zip"
+SRC_URI="https://github.com/rsms/inter/releases/download/v${PV}/Inter-${PV}.zip"
 
 LICENSE="OFL-1.1"
 SLOT="0"
@@ -17,4 +17,3 @@ RDEPEND="${DEPEND}"
 BDEPEND="app-arch/unzip"
 FONT_SUFFIX="otf"
 S="${WORKDIR}/Inter Desktop"
-
