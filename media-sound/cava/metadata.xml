@@ -10,7 +10,13 @@
   </longdescription>
   <use>
     <flag name="sndio">
-      Add support for <pkg>media-sound/sndio</pkg>
+      Add support for
+      <pkg>media-sound/sndio</pkg>
     </flag>
   </use>
+  <upstream>
+    <remote-id type="github">
+      karlstav/cava
+    </remote-id>
+  </upstream>
 </pkgmetadata>
