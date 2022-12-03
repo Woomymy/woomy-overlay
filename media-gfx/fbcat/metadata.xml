@@ -8,4 +8,9 @@
   <longdescription>
     fbcat is a tool that takes a screenshot using the Linux framebuffer device and outputs it in a picture
   </longdescription>
+  <upstream>
+    <remote-id type="github">
+      jwilk/fbcat
+    </remote-id>
+  </upstream>
 </pkgmetadata>
