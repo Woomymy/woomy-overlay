@@ -8,4 +8,9 @@
   <longdescription>
     Brillo controls screen and keyboard LED backlight on GNU/Linux distributions (It is also compatible with wayland)
   </longdescription>
+  <upstream>
+    <remote-id type="gitlab">
+      cameronnemo/brillo
+    </remote-id>
+  </upstream>
 </pkgmetadata>
