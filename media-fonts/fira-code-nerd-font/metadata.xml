@@ -8,4 +8,9 @@
   <longdescription>
     Fira Code classic truetype fonts patched with Nerd fonts extensions (Material design icons, Font-awesome,...).
   </longdescription>
+  <upstream>
+    <remote-id type="github">
+      ryanoasis/nerd-fonts
+    </remote-id>
+  </upstream>
 </pkgmetadata>
