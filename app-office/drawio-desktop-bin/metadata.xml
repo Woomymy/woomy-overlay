@@ -8,4 +8,9 @@
   <longdescription>
     Draw.io desktop client. Draw.io is a configurable diagramming/whiteboarding visualization application. draw.io is owned and developed by JGraph Ltd, a UK based software company.
   </longdescription>
+  <upstream>
+    <remote-id type="github">
+      jgraph/drawio-desktop
+    </remote-id>
+  </upstream>
 </pkgmetadata>
