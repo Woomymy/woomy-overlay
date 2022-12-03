@@ -7,7 +7,9 @@ inherit meson
 
 DESCRIPTION="Rofi fork with wayland support"
 HOMEPAGE="https://github.com/lbonn/rofi"
-SRC_URI="https://github.com/lbonn/rofi/releases/download/${PV}%2Bwayland1/rofi-${PV}+wayland1.tar.xz -> ${P}.tar.xz" # Use archive that contains submodules
+SRC_URI="
+	https://github.com/lbonn/rofi/releases/download/${PV}%2Bwayland1/rofi-${PV}+wayland1.tar.xz -> ${P}.tar.xz
+" # Use archive that contains submodules
 
 LICENSE="MIT"
 SLOT="0"
