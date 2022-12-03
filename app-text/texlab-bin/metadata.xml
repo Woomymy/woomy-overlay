@@ -8,4 +8,9 @@
   <longdescription>
     A cross-platform implementation of the Language Server Protocol providing rich cross-editing support for the LaTeX typesetting system
   </longdescription>
+  <upstream>
+    <remote-id type="github">
+      latex-lsp/texlab
+    </remote-id>
+  </upstream>
 </pkgmetadata>
