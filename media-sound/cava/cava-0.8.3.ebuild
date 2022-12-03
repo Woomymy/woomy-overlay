@@ -32,7 +32,11 @@ src_prepare() {
 }
 
 src_configure() {
-	econf "$(use_enable alsa input-alsa)" "$(use_enable pulseaudio input-pulse)" "$(use_enable portaudio input-portaudio) $(use_enable sndio input-sndio)"
+	econf \
+		"$(use_enable alsa input-alsa)" \
+		"$(use_enable pulseaudio input-pulse)" \
+		"$(use_enable portaudio input-portaudio)" \
+		"$(use_enable sndio input-sndio)"
 }
 
 src_compile() {
