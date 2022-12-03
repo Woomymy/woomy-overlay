@@ -8,4 +8,9 @@
   <longdescription>
     The future of osu!, a free-to-win rhythm game and the beginning of an open era! Currently known by and released under the release codename "lazer". As in sharper than cutting-edge. Rhythm is just a click away!
   </longdescription>
+  <upstream>
+    <remote-id type="github">
+      ppy/osu
+    </remote-id>
+  </upstream>
 </pkgmetadata>
