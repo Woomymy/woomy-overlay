@@ -5,10 +5,12 @@ EAPI=8
 
 inherit desktop electron-base
 
-SNAP_NAME="H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn_12"
+SNAP_ID="H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn"
+SNAP_VERSION="12"
+
 DESCRIPTION="2FA software"
 HOMEPAGE="https://authy.com/"
-SRC_URI="https://api.snapcraft.io/api/v1/snaps/download/${SNAP_NAME}.snap"
+SRC_URI="https://api.snapcraft.io/api/v1/snaps/download/${SNAP_ID}_${SNAP_VERSION}.snap -> ${P}.snap"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
@@ -34,7 +36,7 @@ BDEPEND="
 S="${WORKDIR}"
 src_prepare() {
 	default
-	unsquashfs "${DISTDIR}/${SNAP_NAME}.snap"
+	unsquashfs "${DISTDIR}/${P}.snap"
 	rm -rf "${S}"/squashfs-root/{swiftshader,*GL*,data-dir,gnome-platform,meta,scripts,usr,*.sh}
 	mv squashfs-root authy
 }
