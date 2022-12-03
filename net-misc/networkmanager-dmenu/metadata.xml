@@ -12,4 +12,9 @@
     <flag name="dmenu">Use with dmenu</flag>
     <flag name="rofi">Use rofi instead of dmenu</flag>
   </use>
+  <upstream>
+    <remote-id type="github">
+      firecat53/networkmanager-dmenu
+    </remote-id>
+  </upstream>
 </pkgmetadata>
