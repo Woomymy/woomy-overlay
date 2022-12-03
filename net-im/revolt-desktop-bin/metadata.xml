@@ -8,4 +8,9 @@
   <longdescription>
     Desktop client app for https://revolt.chat, a libre User-first instant messager written in TypeScript with electron.
   </longdescription>
+  <upstream>
+    <remote-id type="github">
+      revoltchat/desktop
+    </remote-id>
+  </upstream>
 </pkgmetadata>
