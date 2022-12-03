@@ -8,4 +8,9 @@
   <longdescription>
     100% Open-Source Chat for Distributed Teams that combines the immediacy of real-time chat with an E-Mail threading model.
   </longdescription>
+  <upstream>
+    <remote-id type="github">
+      zulip/zulip-desktop
+    </remote-id>
+  </upstream>
 </pkgmetadata>
