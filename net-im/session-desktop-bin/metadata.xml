@@ -8,4 +8,9 @@
   <longdescription>
     Session is an end-to-end encrypted messenger that minimises sensitive metadata, designed and built for people who want absolute privacy and freedom from any form of surveillance.
   </longdescription>
+  <upstream>
+    <remote-id type="github">
+      oxen-io/session-desktop
+    </remote-id>
+  </upstream>
 </pkgmetadata>
