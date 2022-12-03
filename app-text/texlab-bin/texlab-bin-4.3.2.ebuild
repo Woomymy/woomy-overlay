@@ -16,6 +16,6 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
-src_install(){
+src_install() {
 	dobin "${WORKDIR}/texlab"
 }
