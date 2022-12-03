@@ -8,4 +8,9 @@
   <longdescription>
     DUF - Disk Usage/Free Utility - a better cross-platform 'df' alternative written using the GO programming language
   </longdescription>
+  <upstream>
+    <remote-id type="github">
+      muesli/duf
+    </remote-id>
+  </upstream>
 </pkgmetadata>
