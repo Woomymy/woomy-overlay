@@ -8,4 +8,9 @@
   <longdescription>
     Cross-platform Advanced Qt/C++ tool for modifiying, extracting and manupulating UEFI firmware images files
   </longdescription>
+  <upstream>
+    <remote-id type="github">
+      LongSoft/UEFITool
+    </remote-id>
+  </upstream>
 </pkgmetadata>
