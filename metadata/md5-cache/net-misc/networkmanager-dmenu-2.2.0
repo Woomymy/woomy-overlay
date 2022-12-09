@@ -1,0 +1,15 @@
+DEFINED_PHASES=install
+DEPEND=net-misc/networkmanager dmenu? ( x11-misc/dmenu ) rofi? ( x11-misc/rofi ) dev-python/pygobject python_targets_python3_8? ( >=dev-lang/python-3.8.15_p3:3.8 ) python_targets_python3_9? ( >=dev-lang/python-3.9.15_p3:3.9 ) python_targets_python3_10? ( >=dev-lang/python-3.10.8_p3:3.10 ) python_targets_python3_11? ( >=dev-lang/python-3.11.0_p2:3.11 )
+DESCRIPTION=Control networkmanager using DMENU
+EAPI=8
+HOMEPAGE=https://github.com/firecat53/networkmanager-dmenu
+INHERIT=desktop python-r1
+IUSE=+dmenu rofi python_targets_python3_8 python_targets_python3_9 python_targets_python3_10 python_targets_python3_11
+KEYWORDS=amd64 x86
+LICENSE=MIT
+RDEPEND=net-misc/networkmanager dmenu? ( x11-misc/dmenu ) rofi? ( x11-misc/rofi ) dev-python/pygobject python_targets_python3_8? ( >=dev-lang/python-3.8.15_p3:3.8 ) python_targets_python3_9? ( >=dev-lang/python-3.9.15_p3:3.9 ) python_targets_python3_10? ( >=dev-lang/python-3.10.8_p3:3.10 ) python_targets_python3_11? ( >=dev-lang/python-3.11.0_p2:3.11 )
+REQUIRED_USE=^^ ( dmenu rofi ) || ( python_targets_python3_8 python_targets_python3_9 python_targets_python3_10 python_targets_python3_11 )
+SLOT=0
+SRC_URI=https://github.com/firecat53/networkmanager-dmenu/archive/v2.2.0.tar.gz -> networkmanager-dmenu-2.2.0.tar.gz
+_eclasses_=desktop	7eb20ad915a0a318176d51bc2508ff5c	multibuild	d26d81f242cb193d899a72bca423d0bd	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144	multilib	5ca4e49abed8e3a2f7b56920eadee157	python-utils-r1	25c880c1db58e21b80b684bacc964958	python-r1	2d51fd03931e743811ce30d198e4dcfd
+_md5_=32de7174f90ef653380d7fb17a7eca3c

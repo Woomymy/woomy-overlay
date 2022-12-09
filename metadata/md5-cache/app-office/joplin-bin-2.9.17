@@ -1,0 +1,15 @@
+BDEPEND=sys-fs/squashfs-tools sys-devel/binutils
+DEFINED_PHASES=install unpack
+DEPEND=x11-libs/libXtst x11-libs/libXScrnSaver x11-libs/libnotify dev-libs/libappindicator media-libs/libglvnd media-video/ffmpeg media-libs/vulkan-loader media-libs/libglvnd media-libs/vulkan-loader
+DESCRIPTION=Note taking and to-do application.
+EAPI=8
+HOMEPAGE=https://joplinapp.org/
+INHERIT=desktop appimage-extract electron-base
+KEYWORDS=amd64
+LICENSE=MIT
+RDEPEND=x11-libs/libXtst x11-libs/libXScrnSaver x11-libs/libnotify dev-libs/libappindicator media-libs/libglvnd media-video/ffmpeg media-libs/vulkan-loader
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/laurent22/joplin/releases/download/v2.9.17/Joplin-2.9.17.AppImage
+_eclasses_=desktop	7eb20ad915a0a318176d51bc2508ff5c	appimage-extract	10eaade99184cd99f73b047e904756cc	electron-base	32b177a467f5058ecdb194c7840be1e6
+_md5_=7096a4e3444261caed16253acb450400
