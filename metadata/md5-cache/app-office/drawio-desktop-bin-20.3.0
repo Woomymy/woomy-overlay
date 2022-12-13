@@ -11,5 +11,5 @@ RDEPEND=x11-libs/libnotify dev-libs/libappindicator media-libs/libglvnd media-vi
 RESTRICT=strip
 SLOT=0
 SRC_URI=https://github.com/jgraph/drawio-desktop/releases/download/v20.3.0/drawio-amd64-20.3.0.deb
-_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144	multilib	5ca4e49abed8e3a2f7b56920eadee157	unpacker	bc57272a0491765c71d973c8cfd35063	desktop	7eb20ad915a0a318176d51bc2508ff5c	electron-base	32b177a467f5058ecdb194c7840be1e6
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	37a4612ce5522df5a100359a8dbc8491	multilib	5ca4e49abed8e3a2f7b56920eadee157	unpacker	bc57272a0491765c71d973c8cfd35063	desktop	7eb20ad915a0a318176d51bc2508ff5c	electron-base	32b177a467f5058ecdb194c7840be1e6
 _md5_=34a63b526207f47a1ee58b2fd93d8156
