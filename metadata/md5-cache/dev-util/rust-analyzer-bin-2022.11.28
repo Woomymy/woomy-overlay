@@ -1,9 +1,0 @@
-DEFINED_PHASES=install
-DESCRIPTION=Rust LSP server
-EAPI=8
-HOMEPAGE=https://rust-analyzer.github.io
-KEYWORDS=amd64
-LICENSE=Apache-2.0 MIT
-SLOT=0
-SRC_URI=https://github.com/rust-analyzer/rust-analyzer/releases/download/2022-11-28/rust-analyzer-x86_64-unknown-linux-gnu.gz -> rust-analyzer-bin-2022.11.28.gz
-_md5_=f73183738cf49f9dddf03c63362e5732
