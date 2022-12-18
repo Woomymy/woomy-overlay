@@ -19,4 +19,3 @@ RDEPEND="${DEPEND}"
 BDEPEND="app-arch/unzip"
 FONT_SUFFIX="otf"
 S="${WORKDIR}/Desktop"
-
