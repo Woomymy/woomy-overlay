@@ -2,10 +2,10 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="person">
-        <email>xgqt@protonmail.com</email>
-        <name>Maciej Barć</name>
-    </maintainer>
-    <upstream>
-        <remote-id type="gitlab">src_prepare/euscan-ng</remote-id>
-    </upstream>
+		<email>xgqt@protonmail.com</email>
+		<name>Maciej Barć</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="gitlab">src_prepare/euscan-ng</remote-id>
+	</upstream>
 </pkgmetadata>
