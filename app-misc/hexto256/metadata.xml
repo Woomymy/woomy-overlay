@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>github@woomy.ovh</email>
+    <name>Woomy</name>
+  </maintainer>
+  <longdescription>
+    Convert HEX Colors to Xterm256 colors with a decent accuracy and speed. (the colors aren't exact due to limited palette)
+  </longdescription>
+  <upstream>
+    <remote-id type="github">
+      Woomymy/hexto256
+    </remote-id>
+  </upstream>
+</pkgmetadata>
