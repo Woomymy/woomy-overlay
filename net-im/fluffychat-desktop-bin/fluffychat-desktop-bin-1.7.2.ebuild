@@ -7,7 +7,7 @@ inherit desktop
 
 DESCRIPTION="Cute matrix client"
 HOMEPAGE="https://fluffychat.im/"
-SRC_URI="https://gitlab.com/api/v4/projects/16112282/packages/generic/fluffychat/${PV}/fluffychat-linux-x86.tar.gz"
+SRC_URI="https://gitlab.com/api/v4/projects/16112282/packages/generic/fluffychat/${PV}/fluffychat-linux-x86.tar.gz -> ${P}.tar.gz"
 
 LICENSE="AGPL-3"
 SLOT="0"
