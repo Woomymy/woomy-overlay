@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Fluffychat
-Exec=/usr/bin/fluffychat %U
-Terminal=false
-Type=Application
-Icon=fluffychat
-StartupWMClass=Fluffychat
-Comment=Fluffychat desktop App
-Categories=Network;
