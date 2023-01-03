@@ -7,7 +7,7 @@ inherit go-module
 
 SRC_URI="
 	https://github.com/muesli/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
-	https://files.woomy.ovh/distfiles/${CATEGORY}/${PN}/${P}-deps.tar.xz
+	https://files.woomy.be/distfiles/${CATEGORY}/${PN}/${P}-deps.tar.xz
 "
 HOMEPAGE="https://github.com/muesli/duf"
 DESCRIPTION="Disk Usage/Free Utility"
