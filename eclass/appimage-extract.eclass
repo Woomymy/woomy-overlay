@@ -3,9 +3,9 @@
 
 # @ECLASS: appimage-extract.eclass
 # @MAINTAINER:
-# Woomymy <github@woomy.ovh>
+# Woomymy <woomy@woomy.be>
 # @AUTHOR:
-# Woomymy <github@woomy.ovh>
+# Woomymy <woomy@woomy.be>
 # @SUPPORTED_EAPIS: 8
 # @BLURB: utils to extract appimage files
 # @DESCRIPTION:

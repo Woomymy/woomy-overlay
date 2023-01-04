@@ -3,9 +3,9 @@
 
 # @ECLASS: electron-base.eclass
 # @MAINTAINER:
-# Woomymy <github@woomy.ovh>
+# Woomymy <woomy@woomy.be>
 # @AUTHOR:
-# Woomymy <github@woomy.ovh>
+# Woomymy <woomy@woomy.be>
 # @SUPPORTED_EAPIS: 8
 # @BLURB: Utilties to work with precompiled electron packages
 # @DESCRIPTION:
