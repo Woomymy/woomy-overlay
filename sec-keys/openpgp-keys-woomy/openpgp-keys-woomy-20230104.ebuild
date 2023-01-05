@@ -5,7 +5,7 @@ EAPI=8
 
 DESCRIPTION="Public key of Woomy"
 HOMEPAGE="https://woomy.be"
-SRC_URI="https://apt.woomy.be/key.gpg -> woomymy.gpg"
+SRC_URI="https://files.woomy.be/woomymy.gpg"
 
 LICENSE="public-domain"
 SLOT="0"
