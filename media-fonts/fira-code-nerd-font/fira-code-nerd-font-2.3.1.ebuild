@@ -4,9 +4,10 @@
 EAPI=8
 
 inherit font
+
 DESCRIPTION="Nerd font version of Fira Code"
 HOMEPAGE="https://github.com/ryanoasis/nerd-fonts/"
-SRC_URI="https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/FiraCode.zip"
+SRC_URI="https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/FiraCode.zip -> ${P}.zip"
 
 LICENSE="OFL-1.1"
 SLOT="0"
