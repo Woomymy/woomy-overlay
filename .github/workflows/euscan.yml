@@ -50,7 +50,7 @@ jobs:
           git add -A
           git add ${{ matrix.packages.name }}
           git commit -sm "${{ matrix.packages.name }}: Update to ${{ matrix.packages.version }}"
-          git checkout master
+          git checkout main
       - name: Create pull request
         uses: peter-evans/create-pull-request@v3
         with:
