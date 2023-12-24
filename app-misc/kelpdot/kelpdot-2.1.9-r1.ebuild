@@ -22,7 +22,7 @@ inherit cargo
 
 DESCRIPTION="Simple dotfiles manager"
 HOMEPAGE="https://github.com/Woomymy/kelp"
-SRC_URI="https://github.com/Woomymy/kelp/archive/${PV}.tar.gz -> ${P}.tar.gz  $(cargo_crate_uris ${CRATES})"
+SRC_URI="https://github.com/Woomymy/kelp/archive/${PV}.tar.gz -> ${P}.tar.gz ${CARGO_CRATE_URIS}"
 RESTRICT="mirror"
 LICENSE="GPL-3"
 SLOT="0"
