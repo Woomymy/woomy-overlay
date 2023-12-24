@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>woomy@woomy.be</email>
+    <name>Woomy</name>
+  </maintainer>
+  <longdescription>
+	  Generate material you color schemes from an image and output them to JSON
+  </longdescription>
+  <upstream>
+    <remote-id type="github">
+      Woomymy/materugen
+    </remote-id>
+  </upstream>
+</pkgmetadata>
