@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit desktop go-module
+inherit go-module
 
 DESCRIPTION="A command line tool to interact with Gitea servers"
 HOMEPAGE="https://gitea.com/gitea/tea"
