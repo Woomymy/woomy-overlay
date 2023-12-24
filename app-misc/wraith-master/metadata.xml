@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>woomy@woomy.be</email>
+    <name>Woomy</name>
+  </maintainer>
+  <longdescription>
+	  A native Linux RGB control application for the AMD Wraith Prism
+  </longdescription>
+  <upstream>
+    <remote-id type="gitlab">
+      screwbit/wraith-master
+	</remote-id>
+	<remote-id type="github">
+	  serebit/wraith-master
+	</remote-id>
+  </upstream>
+</pkgmetadata>
