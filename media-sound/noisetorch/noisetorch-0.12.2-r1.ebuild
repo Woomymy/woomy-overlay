@@ -26,7 +26,7 @@ DEPEND=""
 RDEPEND="
 	${DEPEND}
 	sys-auth/polkit
-	media-sound/pulseaudio
+	media-libs/libpulse
 "
 BDEPEND="
 	dev-lang/go
