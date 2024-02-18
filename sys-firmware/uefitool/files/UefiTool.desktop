@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-TryExec=UEFITool
-Exec=UEFITool
-Terminal=false
-Categories=System;
-Name=UEFITool
-Comment=C++/Qt program for parsing, extracting and modifying UEFI firmware images
