@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Zulip
-Exec=/usr/bin/zulip %U
-Terminal=false
-Type=Application
-Icon=zulip
-StartupWMClass=Zulip
-Comment=Zulip desktop App
-Categories=Network;
