@@ -8,9 +8,13 @@ inherit desktop python-r1
 DESCRIPTION="Control networkmanager using DMENU"
 HOMEPAGE="https://github.com/firecat53/networkmanager-dmenu"
 SRC_URI="https://github.com/firecat53/networkmanager-dmenu/archive/v${PV}.tar.gz -> networkmanager-dmenu-${PV}.tar.gz"
+
+S="${WORKDIR}/${PN}-${PV}"
+
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
+
 IUSE="+dmenu rofi"
 REQUIRED_USE="^^ ( dmenu rofi ) ${PYTHON_REQUIRED_USE}"
 DEPEND="
@@ -21,8 +25,6 @@ DEPEND="
 	${PYTHON_DEPS}
 "
 RDEPEND="${DEPEND}"
-BDEPEND=""
-S="${WORKDIR}/${PN}-${PV}"
 
 src_install() {
 	exeinto /usr/bin/

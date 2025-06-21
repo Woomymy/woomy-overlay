@@ -7,15 +7,13 @@ DESCRIPTION="Public key of Woomy"
 HOMEPAGE="https://woomy.be"
 SRC_URI="https://files.woomy.be/woomymy.gpg"
 
+S="${WORKDIR}"
+
 LICENSE="public-domain"
 SLOT="0"
-KEYWORDS="alpha amd64 arm arm64 hppa ia64 loong m68k mips ppc ppc64 riscv s390 sparc x86"
+KEYWORDS="alpha amd64 arm arm64 hppa loong m68k mips ppc ppc64 riscv s390 sparc x86"
 
-DEPEND=""
 RDEPEND="${DEPEND}"
-BDEPEND=""
-
-S="${WORKDIR}"
 
 src_install()
 {

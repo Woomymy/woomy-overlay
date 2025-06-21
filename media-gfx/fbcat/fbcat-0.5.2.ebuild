@@ -9,7 +9,6 @@ SRC_URI="https://github.com/jwilk/fbcat/releases/download/${PV}/fbcat-${PV}.tar.
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE=""
 
 DEPEND="
 	media-libs/netpbm
@@ -17,7 +16,6 @@ DEPEND="
 	!media-gfx/fbgrab
 "
 RDEPEND="${DEPEND}"
-BDEPEND=""
 
 src_install() {
 	dobin fbcat
