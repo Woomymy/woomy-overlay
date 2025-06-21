@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Revolt
-Exec=/usr/bin/revolt-desktop-bin %U
-Terminal=false
-Type=Application
-Icon=revolt-desktop
-StartupWMClass=Revolt
-Comment=Revolt desktop app
-Categories=Network;
